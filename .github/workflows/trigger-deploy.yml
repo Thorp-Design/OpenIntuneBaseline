@@ -1,0 +1,20 @@
+name: Trigger Intune Deployment
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger deploy workflow in intune-policies
+        run: |
+          gh workflow run deploy.yml \
+            --repo Thorp-Design/intune-policies \
+            --field dry_run=false \
+            --field assign=true \
+            --field update_submodule=true \
+            --field scope=oib-only
+        env:
+          GH_TOKEN: ${{ secrets.INTUNE_POLICIES_TRIGGER_TOKEN }}
