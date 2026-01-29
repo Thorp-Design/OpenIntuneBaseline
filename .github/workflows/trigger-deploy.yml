@@ -9,13 +9,9 @@ jobs:
   trigger:
     runs-on: ubuntu-latest
     steps:
-      - name: Trigger deploy workflow in intune-policies
+      - name: Trigger OIB deploy workflow in intune-policies
         run: |
-          gh workflow run deploy.yml \
-            --repo Thorp-Design/intune-policies \
-            --field dry_run=false \
-            --field assign=true \
-            --field update_submodule=true \
-            --field scope=oib-only
+          gh workflow run deploy-oib.yml \
+            --repo Thorp-Design/intune-policies
         env:
           GH_TOKEN: ${{ secrets.INTUNE_POLICIES_TRIGGER_TOKEN }}
