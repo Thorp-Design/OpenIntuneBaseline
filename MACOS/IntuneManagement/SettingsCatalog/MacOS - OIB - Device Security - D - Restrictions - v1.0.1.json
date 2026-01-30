@@ -9,7 +9,7 @@
     "description":  "",
     "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
     "lastModifiedDateTime":  "2024-08-17T16:19:11.2338087Z",
-    "name":  "MacOS - OIB - Device Security - D - Restrictions - v1.0",
+    "name":  "MacOS - OIB - Device Security - D - Restrictions - v1.0.1",
     "platforms@odata.type":  "#microsoft.graph.deviceManagementConfigurationPlatforms",
     "platforms":  "macOS",
     "priorityMetaData":  null,
