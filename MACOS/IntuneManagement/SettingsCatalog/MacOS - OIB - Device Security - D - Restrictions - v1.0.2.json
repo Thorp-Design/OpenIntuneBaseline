@@ -9,7 +9,7 @@
     "description":  "",
     "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
     "lastModifiedDateTime":  "2024-08-17T16:19:11.2338087Z",
-    "name":  "MacOS - OIB - Device Security - D - Restrictions - v1.0.1",
+    "name":  "MacOS - OIB - Device Security - D - Restrictions - v1.0.2",
     "platforms@odata.type":  "#microsoft.graph.deviceManagementConfigurationPlatforms",
     "platforms":  "macOS",
     "priorityMetaData":  null,
@@ -58,11 +58,6 @@
                                                                                                               "settingInstanceTemplateReference":  null,
                                                                                                               "simpleSettingCollectionValue@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSimpleSettingValue)",
                                                                                                               "simpleSettingCollectionValue":  [
-                                                                                                                                                   {
-                                                                                                                                                       "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-                                                                                                                                                       "settingValueTemplateReference":  null,
-                                                                                                                                                       "value":  "com.apple.AirDrop-Handoff-Settings.extension"
-                                                                                                                                                   },
                                                                                                                                                    {
                                                                                                                                                        "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                                                                                                                                                        "settingValueTemplateReference":  null,
@@ -172,7 +167,7 @@
                                                                                                               "choiceSettingValue":  {
                                                                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
                                                                                                                                          "settingValueTemplateReference":  null,
-                                                                                                                                         "value":  "com.apple.applicationaccess_allowairplayincomingrequests_false",
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowairplayincomingrequests_true",
                                                                                                                                          "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
                                                                                                                                          "children":  [
 

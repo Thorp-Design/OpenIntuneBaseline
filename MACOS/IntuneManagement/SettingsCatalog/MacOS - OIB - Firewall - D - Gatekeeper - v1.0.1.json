@@ -9,7 +9,7 @@
     "description":  "",
     "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
     "lastModifiedDateTime":  "2024-08-30T10:16:37.2662981Z",
-    "name":  "MacOS - OIB - Firewall - D - Gatekeeper - v1.0",
+    "name":  "MacOS - OIB - Firewall - D - Gatekeeper - v1.0.1",
     "platforms@odata.type":  "#microsoft.graph.deviceManagementConfigurationPlatforms",
     "platforms":  "macOS",
     "priorityMetaData":  null,
@@ -104,7 +104,7 @@
                                                                                                               "choiceSettingValue":  {
                                                                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
                                                                                                                                          "settingValueTemplateReference":  null,
-                                                                                                                                         "value":  "com.apple.security.firewall_enablestealthmode_true",
+                                                                                                                                         "value":  "com.apple.security.firewall_enablestealthmode_false",
                                                                                                                                          "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
                                                                                                                                          "children":  [
 

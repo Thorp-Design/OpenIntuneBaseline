@@ -4,7 +4,7 @@
   "creationSource": null,
   "description": "",
   "lastModifiedDateTime": "2024-08-17T16:19:11.2338087Z",
-  "name": "MacOS - OIB - Device Security - D - Restrictions - v1.0.1",
+  "name": "MacOS - OIB - Device Security - D - Restrictions - v1.0.2",
   "platforms": "macOS",
   "priorityMetaData": null,
   "roleScopeTagIds": ["0"],
@@ -33,11 +33,6 @@
                 "settingDefinitionId": "com.apple.systempreferences_disabledpreferencepanes",
                 "settingInstanceTemplateReference": null,
                 "simpleSettingCollectionValue": [
-                  {
-                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-                    "settingValueTemplateReference": null,
-                    "value": "com.apple.AirDrop-Handoff-Settings.extension"
-                  },
                   {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                     "settingValueTemplateReference": null,
@@ -126,7 +121,7 @@
                 "settingInstanceTemplateReference": null,
                 "choiceSettingValue": {
                   "settingValueTemplateReference": null,
-                  "value": "com.apple.applicationaccess_allowairplayincomingrequests_false",
+                  "value": "com.apple.applicationaccess_allowairplayincomingrequests_true",
                   "children": []
                 }
               },
