@@ -4,7 +4,7 @@
   "creationSource": null,
   "description": "",
   "lastModifiedDateTime": "2024-08-17T16:19:11.2338087Z",
-  "name": "MacOS - OIB - Device Security - D - Restrictions - v1.0.2",
+  "name": "MacOS - OIB - Device Security - D - Restrictions - v1.0.3",
   "platforms": "macOS",
   "priorityMetaData": null,
   "roleScopeTagIds": ["0"],
@@ -361,7 +361,7 @@
                 "settingInstanceTemplateReference": null,
                 "choiceSettingValue": {
                   "settingValueTemplateReference": null,
-                  "value": "com.apple.applicationaccess_allowinternetsharingmodification_false",
+                  "value": "com.apple.applicationaccess_allowinternetsharingmodification_true",
                   "children": []
                 }
               },
