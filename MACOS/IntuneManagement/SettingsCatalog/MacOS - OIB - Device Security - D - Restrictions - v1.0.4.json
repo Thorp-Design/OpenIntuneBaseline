@@ -9,7 +9,7 @@
     "description":  "",
     "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
     "lastModifiedDateTime":  "2024-08-17T16:19:11.2338087Z",
-    "name":  "MacOS - OIB - Device Security - D - Restrictions - v1.0.3",
+    "name":  "MacOS - OIB - Device Security - D - Restrictions - v1.0.4",
     "platforms@odata.type":  "#microsoft.graph.deviceManagementConfigurationPlatforms",
     "platforms":  "macOS",
     "priorityMetaData":  null,
@@ -223,7 +223,7 @@
                                                                                                               "choiceSettingValue":  {
                                                                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
                                                                                                                                          "settingValueTemplateReference":  null,
-                                                                                                                                         "value":  "com.apple.applicationaccess_allowautounlock_false",
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowautounlock_true",
                                                                                                                                          "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
                                                                                                                                          "children":  [
 
@@ -237,7 +237,7 @@
                                                                                                               "choiceSettingValue":  {
                                                                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
                                                                                                                                          "settingValueTemplateReference":  null,
-                                                                                                                                         "value":  "com.apple.applicationaccess_allowbluetoothsharingmodification_false",
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowbluetoothsharingmodification_true",
                                                                                                                                          "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
                                                                                                                                          "children":  [
 
@@ -559,7 +559,7 @@
                                                                                                               "choiceSettingValue":  {
                                                                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
                                                                                                                                          "settingValueTemplateReference":  null,
-                                                                                                                                         "value":  "com.apple.applicationaccess_allowpasswordproximityrequests_false",
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowpasswordproximityrequests_true",
                                                                                                                                          "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
                                                                                                                                          "children":  [
 
@@ -573,7 +573,7 @@
                                                                                                               "choiceSettingValue":  {
                                                                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
                                                                                                                                          "settingValueTemplateReference":  null,
-                                                                                                                                         "value":  "com.apple.applicationaccess_allowpasswordsharing_false",
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowpasswordsharing_true",
                                                                                                                                          "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
                                                                                                                                          "children":  [
 

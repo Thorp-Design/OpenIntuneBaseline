@@ -4,7 +4,7 @@
   "creationSource": null,
   "description": "",
   "lastModifiedDateTime": "2024-08-17T16:19:11.2338087Z",
-  "name": "MacOS - OIB - Device Security - D - Restrictions - v1.0.3",
+  "name": "MacOS - OIB - Device Security - D - Restrictions - v1.0.4",
   "platforms": "macOS",
   "priorityMetaData": null,
   "roleScopeTagIds": ["0"],
@@ -161,7 +161,7 @@
                 "settingInstanceTemplateReference": null,
                 "choiceSettingValue": {
                   "settingValueTemplateReference": null,
-                  "value": "com.apple.applicationaccess_allowautounlock_false",
+                  "value": "com.apple.applicationaccess_allowautounlock_true",
                   "children": []
                 }
               },
@@ -171,7 +171,7 @@
                 "settingInstanceTemplateReference": null,
                 "choiceSettingValue": {
                   "settingValueTemplateReference": null,
-                  "value": "com.apple.applicationaccess_allowbluetoothsharingmodification_false",
+                  "value": "com.apple.applicationaccess_allowbluetoothsharingmodification_true",
                   "children": []
                 }
               },
@@ -401,7 +401,7 @@
                 "settingInstanceTemplateReference": null,
                 "choiceSettingValue": {
                   "settingValueTemplateReference": null,
-                  "value": "com.apple.applicationaccess_allowpasswordproximityrequests_false",
+                  "value": "com.apple.applicationaccess_allowpasswordproximityrequests_true",
                   "children": []
                 }
               },
@@ -411,7 +411,7 @@
                 "settingInstanceTemplateReference": null,
                 "choiceSettingValue": {
                   "settingValueTemplateReference": null,
-                  "value": "com.apple.applicationaccess_allowpasswordsharing_false",
+                  "value": "com.apple.applicationaccess_allowpasswordsharing_true",
                   "children": []
                 }
               },
