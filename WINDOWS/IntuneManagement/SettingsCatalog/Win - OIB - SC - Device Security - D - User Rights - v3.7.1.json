@@ -9,7 +9,7 @@
   "description": "",
   "lastModifiedDateTime@odata.type": "#DateTimeOffset",
   "lastModifiedDateTime": "2025-10-09T14:39:43.2459912Z",
-  "name": "Win - OIB - SC - Device Security - D - User Rights - v3.7",
+  "name": "Win - OIB - SC - Device Security - D - User Rights - v3.7.1",
   "platforms@odata.type": "#microsoft.graph.deviceManagementConfigurationPlatforms",
   "platforms": "windows10",
   "priorityMetaData": null,
@@ -245,11 +245,6 @@
         "settingInstanceTemplateReference": null,
         "simpleSettingCollectionValue@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSimpleSettingValue)",
         "simpleSettingCollectionValue": [
-          {
-            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-            "settingValueTemplateReference": null,
-            "value": "*S-1-5-113"
-          },
           {
             "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
             "settingValueTemplateReference": null,
