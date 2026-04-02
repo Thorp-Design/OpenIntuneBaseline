@@ -9,7 +9,7 @@
     "description":  "",
     "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
     "lastModifiedDateTime":  "2024-08-19T14:32:58.1538595Z",
-    "name":  "MacOS - OIB - Microsoft AutoUpdate - D - MAU Configuration - v1.0",
+    "name":  "MacOS - OIB - Microsoft AutoUpdate - D - MAU Configuration - v1.0.1",
     "platforms@odata.type":  "#microsoft.graph.deviceManagementConfigurationPlatforms",
     "platforms":  "macOS",
     "priorityMetaData":  null,
@@ -248,7 +248,7 @@
                                                  "choiceSettingValue":  {
                                                                             "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
                                                                             "settingValueTemplateReference":  null,
-                                                                            "value":  "com.apple.managedclient.preferences_guardagainstappmodification_false",
+                                                                            "value":  "com.apple.managedclient.preferences_guardagainstappmodification_true",
                                                                             "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
                                                                             "children":  [
 
