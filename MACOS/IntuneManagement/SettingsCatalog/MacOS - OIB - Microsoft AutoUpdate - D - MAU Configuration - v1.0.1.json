@@ -332,7 +332,7 @@
                                                  "choiceSettingValue":  {
                                                                             "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
                                                                             "settingValueTemplateReference":  null,
-                                                                            "value":  "com.apple.managedclient.preferences_updateroptimization_0",
+                                                                            "value":  "com.apple.managedclient.preferences_updateroptimization_1",
                                                                             "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
                                                                             "children":  [
 

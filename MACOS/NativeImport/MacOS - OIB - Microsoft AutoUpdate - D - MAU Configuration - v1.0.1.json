@@ -200,7 +200,7 @@
         "settingInstanceTemplateReference": null,
         "choiceSettingValue": {
           "settingValueTemplateReference": null,
-          "value": "com.apple.managedclient.preferences_channelname_4",
+          "value": "com.apple.managedclient.preferences_channelname_0",
           "children": []
         }
       }
