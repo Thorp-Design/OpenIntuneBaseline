@@ -9,7 +9,7 @@
     "description":  "NOTE: These policies are only applicable to Microsoft 365 Apps for Enterprise (included with M365 E*/A*/F*), not Microsoft 365 Apps for Business (included with M365 Business Premium).",
     "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
     "lastModifiedDateTime":  "2025-05-13T10:18:10.5066369Z",
-    "name":  "Win - OIB - SC - Microsoft Office - U - Security - v3.6",
+    "name":  "Win - OIB - SC - Microsoft Office - U - Security - v3.6.1",
     "platforms@odata.type":  "#microsoft.graph.deviceManagementConfigurationPlatforms",
     "platforms":  "windows10",
     "priorityMetaData":  null,
@@ -114,7 +114,7 @@
                                                  "choiceSettingValue":  {
                                                                             "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
                                                                             "settingValueTemplateReference":  null,
-                                                                            "value":  "user_vendor_msft_policy_config_access16v2~policy~l_microsoftofficeaccess~l_applicationsettings~l_security~l_trustcenter~l_trustedlocations_l_allowtrustedlocationsonthenetwork_0",
+                                                                            "value":  "user_vendor_msft_policy_config_access16v2~policy~l_microsoftofficeaccess~l_applicationsettings~l_security~l_trustcenter~l_trustedlocations_l_allowtrustedlocationsonthenetwork_1",
                                                                             "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
                                                                             "children":  [
 
@@ -1145,7 +1145,7 @@
                                                  "choiceSettingValue":  {
                                                                             "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
                                                                             "settingValueTemplateReference":  null,
-                                                                            "value":  "user_vendor_msft_policy_config_excel16v2~policy~l_microsoftofficeexcel~l_exceloptions~l_security~l_trustcenter~l_trustedlocations_l_allowtrustedlocationsonthenetwork_0",
+                                                                            "value":  "user_vendor_msft_policy_config_excel16v2~policy~l_microsoftofficeexcel~l_exceloptions~l_security~l_trustcenter~l_trustedlocations_l_allowtrustedlocationsonthenetwork_1",
                                                                             "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
                                                                             "children":  [
 
@@ -1798,7 +1798,7 @@
                                                  "choiceSettingValue":  {
                                                                             "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
                                                                             "settingValueTemplateReference":  null,
-                                                                            "value":  "user_vendor_msft_policy_config_office16v2~policy~l_microsoftofficesystem~l_securitysettings~l_trustcenter241_l_allowmixofpolicyanduserlocations_0",
+                                                                            "value":  "user_vendor_msft_policy_config_office16v2~policy~l_microsoftofficesystem~l_securitysettings~l_trustcenter241_l_allowmixofpolicyanduserlocations_1",
                                                                             "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
                                                                             "children":  [
 
@@ -2744,7 +2744,7 @@
                                                  "choiceSettingValue":  {
                                                                             "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
                                                                             "settingValueTemplateReference":  null,
-                                                                            "value":  "user_vendor_msft_policy_config_ppt16v2~policy~l_microsoftofficepowerpoint~l_powerpointoptions~l_security~l_trustcenter~l_trustedlocations_l_allowtrustedlocationsonthenetwork_0",
+                                                                            "value":  "user_vendor_msft_policy_config_ppt16v2~policy~l_microsoftofficepowerpoint~l_powerpointoptions~l_security~l_trustcenter~l_trustedlocations_l_allowtrustedlocationsonthenetwork_1",
                                                                             "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
                                                                             "children":  [
 
@@ -2823,7 +2823,7 @@
                                                  "choiceSettingValue":  {
                                                                             "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
                                                                             "settingValueTemplateReference":  null,
-                                                                            "value":  "user_vendor_msft_policy_config_proj16v2~policy~l_proj~l_projectoptions~l_security~l_trustcenter_l_allowtrustedlocationsonthenetwork_0",
+                                                                            "value":  "user_vendor_msft_policy_config_proj16v2~policy~l_proj~l_projectoptions~l_security~l_trustcenter_l_allowtrustedlocationsonthenetwork_1",
                                                                             "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
                                                                             "children":  [
 
@@ -3064,7 +3064,7 @@
                                                  "choiceSettingValue":  {
                                                                             "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
                                                                             "settingValueTemplateReference":  null,
-                                                                            "value":  "user_vendor_msft_policy_config_visio16v2~policy~l_microsoftvisio~l_visiooptions~l_security~l_trustcenter_l_allowtrustedlocationsonthenetwork_0",
+                                                                            "value":  "user_vendor_msft_policy_config_visio16v2~policy~l_microsoftvisio~l_visiooptions~l_security~l_trustcenter_l_allowtrustedlocationsonthenetwork_1",
                                                                             "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
                                                                             "children":  [
 
@@ -3827,7 +3827,7 @@
                                                  "choiceSettingValue":  {
                                                                             "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
                                                                             "settingValueTemplateReference":  null,
-                                                                            "value":  "user_vendor_msft_policy_config_word16v2~policy~l_microsoftofficeword~l_wordoptions~l_security~l_trustcenter~l_trustedlocations_l_allowtrustedlocationsonthenetwork_0",
+                                                                            "value":  "user_vendor_msft_policy_config_word16v2~policy~l_microsoftofficeword~l_wordoptions~l_security~l_trustcenter~l_trustedlocations_l_allowtrustedlocationsonthenetwork_1",
                                                                             "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
                                                                             "children":  [
 
