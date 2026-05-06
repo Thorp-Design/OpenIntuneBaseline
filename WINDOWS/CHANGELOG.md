@@ -1,6 +1,16 @@
 # OIB Windows Change Log
 
 # Windows v3.8 - 2026-04-16 - IR40 Edition 🎂
+> [!IMPORTANT]
+> As part of ongoing and future improvements, I am adding a per-policy tracking GUID (OIBID) to the `description` field of every policy, even ones that otherwise haven't changed this version. 
+> My intention is to use this in my OIBDeployer (and potentially other tools) to provide richer information, as well as being able to reliably identify existing policies without depending on the policy name.
+>
+> The GUID is appended to the description in the format `OIBID:<UUID>` and is tracked in a new `WINDOWS/PolicyManifest.json` file in this repository. **Please do not remove or edit this token**, as doing so will break version tracking for that policy.
+>
+> For those of you who already have the OIB deployed, there is no hard requirement for you to suddenly re-deploy the entire thing in your tenant. There are ways to do so if you're interested: IntuneManagement has an "Update" option on imports which is a Preview feature, a script that does a PATCH on existing policies matched from the PolicyManifest file, or even just upating the Description field manually!.
+>
+> I'm always very concious of large/breaking changes, but I do think this change will be worth if for the improved tracking and management capabilities it will provide in the long run, and I hope you agree!
+
 ## Added 🆕
 ### Settings Catalog
 🆕**Win - OIB - SC - Network Security - D - Disable NTLM - v3.8**
