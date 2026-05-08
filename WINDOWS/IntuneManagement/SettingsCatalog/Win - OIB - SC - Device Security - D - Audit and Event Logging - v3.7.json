@@ -6,7 +6,7 @@
   "createdDateTime@odata.type": "#DateTimeOffset",
   "createdDateTime": "2024-04-11T18:37:59.1943833Z",
   "creationSource": null,
-  "description": "",
+  "description": "OIBID:8A7BDD48-A411-4B91-8096-2D551D175561",
   "lastModifiedDateTime@odata.type": "#DateTimeOffset",
   "lastModifiedDateTime": "2025-10-01T10:31:43.1808828Z",
   "name": "Win - OIB - SC - Device Security - D - Audit and Event Logging - v3.7",

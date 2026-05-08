@@ -63,10 +63,16 @@ That being said, if there's something you feel is missing or should be included,
 ---
 
 ## Importing the Baseline
-You have two options when importing the baseline:
+There are three options to import the baseline:
+
+### **OIB Deployer**
+
+My own tool, the [OIB Deployer](https://deploy.openintunebaseline.com/), allows for platform-specific, granular deployment of the baseline, as well as being able to check for existing OIB policies in your tenant, and highlight missing or updated policies.
+
+Only requires a single application permission accepting (DeviceManagementConfiguration.ReadWrite.All), and can do a complete import in less than a minute!
 
 ### **IntuneManagement**
-This is the recommended method, as it allows for an import of the entire baseline. 
+The OG deployment method, and how I still export the majority of baseline policies. 
 
 These files have been exported using the [IntuneManagement](https://github.com/Micke-K/IntuneManagement) tool developed by [Mikael Karlsson](https://twitter.com/Micke_K_72), and can be imported in the same way.
 Please consult the IntuneManagement documentation for further information on how to import the baseline or for issues.
@@ -90,7 +96,7 @@ Each OS will have its own folder, with OS-specific files (readme, changelog, bas
 The current OIB versions are:
 | OS | Current Release | Change Log | Wiki Page |
 |:---:|:---:|:---:|:---:|
-| [Windows](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/tree/main/WINDOWS) | [v3.6](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/windows-v3.6) | [Link](/WINDOWS/CHANGELOG.md) | [Link](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/wiki/win-readme) |
+| [Windows](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/tree/main/WINDOWS) | [v3.8](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/windows-v3.8) | [Link](/WINDOWS/CHANGELOG.md) | [Link](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/wiki/win-readme) |
 | [Windows 365](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/tree/main/WINDOWS365) | [v1.0](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/win365-v1.0) | [Link](/WINDOWS365/CHANGELOG.md) | [Link](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/wiki/win365-readme) |
 | [MacOS](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/tree/main/MACOS) | [v1.0](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/macos-v1.0) | [Link](/MACOS/CHANGELOG.md) | [Link](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/wiki/macos-readme) |
 

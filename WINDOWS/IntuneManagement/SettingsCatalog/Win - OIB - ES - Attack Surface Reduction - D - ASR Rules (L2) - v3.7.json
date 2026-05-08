@@ -6,7 +6,7 @@
   "createdDateTime@odata.type": "#DateTimeOffset",
   "createdDateTime": "2024-08-22T17:56:38.3902801Z",
   "creationSource": null,
-  "description": "DO NOT ASSIGN THIS POLICY WITHOUT VALIDATING VIA AUDIT MODE FIRST!\nhttps://learn.microsoft.com/en-us/defender-endpoint/attack-surface-reduction-rules-deployment-operationalize",
+  "description": "DO NOT ASSIGN THIS POLICY WITHOUT VALIDATING VIA AUDIT MODE FIRST!\nhttps://learn.microsoft.com/en-us/defender-endpoint/attack-surface-reduction-rules-deployment-operationalize\nOIBID:86EB0653-DD3D-4CBA-BB51-1FFDC3E1F39C",
   "lastModifiedDateTime@odata.type": "#DateTimeOffset",
   "lastModifiedDateTime": "2025-09-09T15:51:30.4648244Z",
   "name": "Win - OIB - ES - Attack Surface Reduction - D - ASR Rules (L2) - v3.7",
