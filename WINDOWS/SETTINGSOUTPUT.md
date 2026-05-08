@@ -2,9 +2,9 @@
 
 *OS:* Windows
 
-*Version:* v3.7
+*Version:* v3.8
 
-*Generated:* 2025-10-15
+*Generated:* 2026-04-16
 
 
 ## Table of Contents
@@ -34,99 +34,107 @@
 
     - [Win - OIB - ES - Windows Firewall - D - Firewall Configuration - v3.1](#section-13)
 
-    - [Win - OIB - ES - Windows Hello for Business - D - WHfB Configuration - v3.2](#section-14)
+    - [Win - OIB - ES - Windows Firewall - D - Security Rules - v3.8](#section-14)
 
-    - [Win - OIB - ES - Windows LAPS - D - LAPS Configuration - v3.1](#section-15)
+    - [Win - OIB - ES - Windows Hello for Business - D - WHfB Configuration - v3.2](#section-15)
 
-    - [Win - OIB - ES - Windows LAPS - D - LAPS Configuration (24H2+) - v3.6](#section-16)
+    - [Win - OIB - ES - Windows LAPS - D - LAPS Configuration - v3.1](#section-16)
 
-    - [Win - OIB - SC - Credential Management - D - Passwordless - v3.3](#section-17)
+    - [Win - OIB - ES - Windows LAPS - D - LAPS Configuration (24H2+) - v3.6](#section-17)
 
-    - [Win - OIB - SC - Defender Antivirus - D - Additional Configuration - v3.6](#section-18)
+    - [Win - OIB - SC - Credential Management - D - Passwordless - v3.3](#section-18)
 
-    - [Win - OIB - SC - Device Security - D - Administrator Protection - v3.7](#section-19)
+    - [Win - OIB - SC - Defender Antivirus - D - Additional Configuration - v3.8](#section-19)
 
-    - [Win - OIB - SC - Device Security - D - Audit and Event Logging - v3.7](#section-20)
+    - [Win - OIB - SC - Device Security - D - Administrator Protection - v3.7](#section-20)
 
-    - [Win - OIB - SC - Device Security - D - Config Refresh - v3.2](#section-21)
+    - [Win - OIB - SC - Device Security - D - Audit and Event Logging - v3.7](#section-21)
 
-    - [Win - OIB - SC - Device Security - D - Enhanced Phishing Protection - v3.0](#section-22)
+    - [Win - OIB - SC - Device Security - D - Config Refresh - v3.2](#section-22)
 
-    - [Win - OIB - SC - Device Security - D - Local Security Policies - v3.0](#section-23)
+    - [Win - OIB - SC - Device Security - D - Enhanced Phishing Protection - v3.0](#section-23)
 
-    - [Win - OIB - SC - Device Security - D - Local Security Policies (24H2+) - v3.6](#section-24)
+    - [Win - OIB - SC - Device Security - D - Local Security Policies - v3.0](#section-24)
 
-    - [Win - OIB - SC - Device Security - D - Location and Privacy - v3.2](#section-25)
+    - [Win - OIB - SC - Device Security - D - Local Security Policies (24H2+) - v3.6](#section-25)
 
-    - [Win - OIB - SC - Device Security - D - Login and Lock Screen - v3.1](#section-26)
+    - [Win - OIB - SC - Device Security - D - Location and Privacy - v3.2](#section-26)
 
-    - [Win - OIB - SC - Device Security - D - Printing - v3.7](#section-27)
+    - [Win - OIB - SC - Device Security - D - Login and Lock Screen - v3.8](#section-27)
 
-    - [Win - OIB - SC - Device Security - D - Remote Desktop Services and RPC - v3.0](#section-28)
+    - [Win - OIB - SC - Device Security - D - Printing - v3.7](#section-28)
 
-    - [Win - OIB - SC - Device Security - D - Script File Associations - v3.4](#section-29)
+    - [Win - OIB - SC - Device Security - D - Remote Desktop Services and RPC - v3.0](#section-29)
 
-    - [Win - OIB - SC - Device Security - D - Security Hardening - v3.7](#section-30)
+    - [Win - OIB - SC - Device Security - D - Script File Associations - v3.4](#section-30)
 
-    - [Win - OIB - SC - Device Security - D - Timezone - v3.4](#section-31)
+    - [Win - OIB - SC - Device Security - D - Security Hardening - v3.7](#section-31)
 
-    - [Win - OIB - SC - Device Security - D - User Rights - v3.7](#section-32)
+    - [Win - OIB - SC - Device Security - D - Timezone - v3.4](#section-32)
 
-    - [Win - OIB - SC - Device Security - D - Windows Package Manager  - v3.5](#section-33)
+    - [Win - OIB - SC - Device Security - D - User Rights - v3.7](#section-33)
 
-    - [Win - OIB - SC - Device Security - D - Windows Subsystem for Linux - v3.2](#section-34)
+    - [Win - OIB - SC - Device Security - D - Windows Package Manager  - v3.5](#section-34)
 
-    - [Win - OIB - SC - Device Security - U - Device Guard, Credential Guard and HVCI - v3.7](#section-35)
+    - [Win - OIB - SC - Device Security - D - Windows Subsystem for Linux - v3.2](#section-35)
 
-    - [Win - OIB - SC - Device Security - U - Power and Device Lock - v3.6](#section-36)
+    - [Win - OIB - SC - Device Security - U - Device Guard, Credential Guard and HVCI - v3.7](#section-36)
 
-    - [Win - OIB - SC - Device Security - U - Windows Sandbox - v3.4](#section-37)
+    - [Win - OIB - SC - Device Security - U - Power and Device Lock - v3.6](#section-37)
 
-    - [Win - OIB - SC - Device Security - U - Windows Spotlight and Org Messages - v3.0](#section-38)
+    - [Win - OIB - SC - Device Security - U - Windows Sandbox - v3.4](#section-38)
 
-    - [Win - OIB - SC - Internet Explorer (Legacy) - D - Security - v3.1.1](#section-39)
+    - [Win - OIB - SC - Device Security - U - Windows Spotlight and Org Messages - v3.0](#section-39)
 
-    - [Win - OIB - SC - Microsoft Accounts - D - Configuration - v3.2](#section-40)
+    - [Win - OIB - SC - Internet Explorer (Legacy) - D - Security - v3.1.1](#section-40)
 
-    - [Win - OIB - SC - Microsoft Edge - D - Security - v3.7](#section-41)
+    - [Win - OIB - SC - Microsoft Accounts - D - Configuration - v3.2](#section-41)
 
-    - [Win - OIB - SC - Microsoft Edge - D - Updates - v3.6](#section-42)
+    - [Win - OIB - SC - Microsoft Edge - D - Security - v3.8](#section-42)
 
-    - [Win - OIB - SC - Microsoft Edge - U - Extensions - v3.1](#section-43)
+    - [Win - OIB - SC - Microsoft Edge - D - Updates - v3.6](#section-43)
 
-    - [Win - OIB - SC - Microsoft Edge - U - Password Management - v3.0](#section-44)
+    - [Win - OIB - SC - Microsoft Edge - U - Extensions - v3.1](#section-44)
 
-    - [Win - OIB - SC - Microsoft Edge - U - Profiles, Sign-In and Sync - v3.0](#section-45)
+    - [Win - OIB - SC - Microsoft Edge - U - Password Management - v3.0](#section-45)
 
-    - [Win - OIB - SC - Microsoft Edge - U - User Experience - v3.7](#section-46)
+    - [Win - OIB - SC - Microsoft Edge - U - Profiles, Sign-In and Sync - v3.0](#section-46)
 
-    - [Win - OIB - SC - Microsoft Office - D - Security - v3.6](#section-47)
+    - [Win - OIB - SC - Microsoft Edge - U - User Experience - v3.8](#section-47)
 
-    - [Win - OIB - SC - Microsoft Office - D - Updates - v3.0](#section-48)
+    - [Win - OIB - SC - Microsoft Office - D - Security - v3.6](#section-48)
 
-    - [Win - OIB - SC - Microsoft Office - U - Config and Experience - v3.6](#section-49)
+    - [Win - OIB - SC - Microsoft Office - D - Updates - v3.0](#section-49)
 
-    - [Win - OIB - SC - Microsoft Office - U - Security - v3.6](#section-50)
+    - [Win - OIB - SC - Microsoft Office - U - Config and Experience - v3.6](#section-50)
 
-    - [Win - OIB - SC - Microsoft OneDrive - D - Configuration - v3.2](#section-51)
+    - [Win - OIB - SC - Microsoft Office - U - Security - v3.6](#section-51)
 
-    - [Win - OIB - SC - Microsoft OneDrive - U - Configuration - v3.0](#section-52)
+    - [Win - OIB - SC - Microsoft OneDrive - D - Configuration - v3.2](#section-52)
 
-    - [Win - OIB - SC - Microsoft Store - D - Configuration - v3.4](#section-53)
+    - [Win - OIB - SC - Microsoft OneDrive - U - Configuration - v3.8](#section-53)
 
-    - [Win - OIB - SC - Microsoft Store - U - Configuration - v3.3](#section-54)
+    - [Win - OIB - SC - Microsoft Store - D - Configuration - v3.8](#section-54)
 
-    - [Win - OIB - SC - Windows Hello for Business - D - Cloud Kerberos Trust - v3.5](#section-55)
+    - [Win - OIB - SC - Microsoft Store - U - Configuration - v3.3](#section-55)
 
-    - [Win - OIB - SC - Windows Update for Business - D - Delivery Optimisation - v3.0](#section-56)
+    - [Win - OIB - SC - Network Security - D - Disable NTLM - v3.8](#section-56)
 
-    - [Win - OIB - SC - Windows Update for Business - D - Reports and Telemetry - v3.0](#section-57)
+    - [Win - OIB - SC - Windows Apps - D - In-Box App Removal - v3.7](#section-57)
 
-    - [Win - OIB - SC - Windows User Experience - D - Feature Configuration - v3.1](#section-58)
+    - [Win - OIB - SC - Windows Hello for Business - D - Cloud Kerberos Trust - v3.5](#section-58)
 
-    - [Win - OIB - SC - Windows User Experience - D - Settings Sync - v3.7](#section-59)
+    - [Win - OIB - SC - Windows Update for Business - D - Delivery Optimisation - v3.0](#section-59)
 
-    - [Win - OIB - SC - Windows User Experience - U - Copilot - v3.6](#section-60)
+    - [Win - OIB - SC - Windows Update for Business - D - Reports and Telemetry - v3.0](#section-60)
+
+    - [Win - OIB - SC - Windows User Experience - D - Automatic Restart Sign-On - v3.8](#section-61)
+
+    - [Win - OIB - SC - Windows User Experience - D - Feature Configuration - v3.8](#section-62)
+
+    - [Win - OIB - SC - Windows User Experience - D - Settings Sync - v3.7](#section-63)
+
+    - [Win - OIB - SC - Windows User Experience - U - Copilot - v3.8](#section-64)
 
 
 <h1 id="section-1">Device configuration</h1>
@@ -667,8 +675,8 @@
 <td colspan="2" class='category-level1'>Defender</td>
 </tr>
 <tr class=''>
-<td class='property-column1'>TamperProtection (Device)</td>
-<td class='property-column2'>On</td>
+<td class='property-column1'>Controlled Configuration (Device)</td>
+<td class='property-column2'>Tamper Protection (On)</td>
 </tr>
 <tr>
 <td colspan="2" class='category-level1'>Windows Defender Security Center</td>
@@ -1447,7 +1455,267 @@
 ###### Table 22. Settings - Win - OIB - ES - Windows Firewall - D - Firewall Configuration - v3.1
 
 
-<h3 id="section-14">Win - OIB - ES - Windows Hello for Business - D - WHfB Configuration - v3.2</h3>
+<h3 id="section-14">Win - OIB - ES - Windows Firewall - D - Security Rules - v3.8</h3>
+
+<table class='table-settings'>
+<tr class='table-header1'>
+<td>Name</td>
+<td>Value</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>Basics</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Name</td>
+<td class='property-column2'>Win - OIB - ES - Windows Firewall - D - Security Rules - v3.8</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Description</td>
+<td class='property-column2'></td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Profile type</td>
+<td class='property-column2'>Settings catalog</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Category</td>
+<td class='property-column2'>Firewall</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Policy type</td>
+<td class='property-column2'>Windows Firewall Rules</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Platform supported</td>
+<td class='property-column2'>Windows 10 and later</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Created</td>
+<td class='property-column2'>08 April 2026 15:34:48</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Last modified</td>
+<td class='property-column2'>09 April 2026 13:06:10</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Scope tags</td>
+<td class='property-column2'>Default</td>
+</tr>
+</table>
+
+###### Table 23. Basics - Win - OIB - ES - Windows Firewall - D - Security Rules - v3.8
+
+
+<table class='table-settings'>
+<tr class='table-header1'>
+<td>Name</td>
+<td>Value</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>Firewall</td>
+</tr>
+<tr class=''>
+<td class='property-column1'> Firewall Rule Name</td>
+<td class='property-column2'>Not configured</td>
+</tr>
+<tr class='row-new-property'>
+<td class='property-column1' style='padding-left:10px !important;'>Enabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Name</td>
+<td class='property-column2'>LOLBIN Security - Block 32-bit calc.exe</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Interface Types</td>
+<td class='property-column2'>All</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>File Path</td>
+<td class='property-column2'>%systemroot%\SysWOW64\calc.exe</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Network Types</td>
+<td class='property-column2'>FW_PROFILE_TYPE_ALL:  This value represents all these network sets and any future network sets.</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Description</td>
+<td class='property-column2'>LOLBIN Security - Block 32-bit calc.exe</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Direction</td>
+<td class='property-column2'>The rule applies to outbound traffic.</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Action</td>
+<td class='property-column2'>Block</td>
+</tr>
+<tr class='row-new-property'>
+<td class='property-column1' style='padding-left:10px !important;'>Enabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Name</td>
+<td class='property-column2'>LOLBIN Security - Block 64-bit calc.exe</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Interface Types</td>
+<td class='property-column2'>All</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>File Path</td>
+<td class='property-column2'>%systemroot%\System32\calc.exe</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Network Types</td>
+<td class='property-column2'>FW_PROFILE_TYPE_ALL:  This value represents all these network sets and any future network sets.</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Description</td>
+<td class='property-column2'>LOLBIN Security - Block 64-bit calc.exe</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Direction</td>
+<td class='property-column2'>The rule applies to outbound traffic.</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Action</td>
+<td class='property-column2'>Block</td>
+</tr>
+<tr class='row-new-property'>
+<td class='property-column1' style='padding-left:10px !important;'>Enabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Name</td>
+<td class='property-column2'>LOLBIN Security - Block 32-bit notepad.exe</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Interface Types</td>
+<td class='property-column2'>All</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>File Path</td>
+<td class='property-column2'>%systemroot%\SysWOW64\notepad.exe</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Network Types</td>
+<td class='property-column2'>FW_PROFILE_TYPE_ALL:  This value represents all these network sets and any future network sets.</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Description</td>
+<td class='property-column2'>LOLBIN Security - Block 32-bit notepad.exe</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Direction</td>
+<td class='property-column2'>The rule applies to outbound traffic.</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Action</td>
+<td class='property-column2'>Block</td>
+</tr>
+<tr class='row-new-property'>
+<td class='property-column1' style='padding-left:10px !important;'>Enabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Name</td>
+<td class='property-column2'>LOLBIN Security - Block 64-bit notepad.exe</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Interface Types</td>
+<td class='property-column2'>All</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>File Path</td>
+<td class='property-column2'>%systemroot%\System32\notepad.exe</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Network Types</td>
+<td class='property-column2'>FW_PROFILE_TYPE_ALL:  This value represents all these network sets and any future network sets.</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Description</td>
+<td class='property-column2'>LOLBIN Security - Block 64-bit notepad.exe</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Direction</td>
+<td class='property-column2'>The rule applies to outbound traffic.</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Action</td>
+<td class='property-column2'>Block</td>
+</tr>
+<tr class='row-new-property'>
+<td class='property-column1' style='padding-left:10px !important;'>Enabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Name</td>
+<td class='property-column2'>LOLBIN Security - Block 32-bit mshta.exe</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Interface Types</td>
+<td class='property-column2'>All</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>File Path</td>
+<td class='property-column2'>%systemroot%\SysWOW64\mshta.exe</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Network Types</td>
+<td class='property-column2'>FW_PROFILE_TYPE_ALL:  This value represents all these network sets and any future network sets.</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Description</td>
+<td class='property-column2'>LOLBIN Security - Block 32-bit mshta.exe</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Direction</td>
+<td class='property-column2'>The rule applies to outbound traffic.</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Action</td>
+<td class='property-column2'>Block</td>
+</tr>
+<tr class='row-new-property'>
+<td class='property-column1' style='padding-left:10px !important;'>Enabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Name</td>
+<td class='property-column2'>LOLBIN Security - Block 64-bit mshta.exe</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Interface Types</td>
+<td class='property-column2'>All</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>File Path</td>
+<td class='property-column2'>%systemroot%\System32\mshta.exe</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Network Types</td>
+<td class='property-column2'>FW_PROFILE_TYPE_ALL:  This value represents all these network sets and any future network sets.</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Description</td>
+<td class='property-column2'>LOLBIN Security - Block 64-bit mshta.exe</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Direction</td>
+<td class='property-column2'>The rule applies to outbound traffic.</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Action</td>
+<td class='property-column2'>Block</td>
+</tr>
+</table>
+
+###### Table 24. Settings - Win - OIB - ES - Windows Firewall - D - Security Rules - v3.8
+
+
+<h3 id="section-15">Win - OIB - ES - Windows Hello for Business - D - WHfB Configuration - v3.2</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -1495,7 +1763,7 @@
 </tr>
 </table>
 
-###### Table 23. Basics - Win - OIB - ES - Windows Hello for Business - D - WHfB Configuration - v3.2
+###### Table 25. Basics - Win - OIB - ES - Windows Hello for Business - D - WHfB Configuration - v3.2
 
 
 <table class='table-settings'>
@@ -1536,10 +1804,10 @@
 </tr>
 </table>
 
-###### Table 24. Settings - Win - OIB - ES - Windows Hello for Business - D - WHfB Configuration - v3.2
+###### Table 26. Settings - Win - OIB - ES - Windows Hello for Business - D - WHfB Configuration - v3.2
 
 
-<h3 id="section-15">Win - OIB - ES - Windows LAPS - D - LAPS Configuration - v3.1</h3>
+<h3 id="section-16">Win - OIB - ES - Windows LAPS - D - LAPS Configuration - v3.1</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -1587,7 +1855,7 @@
 </tr>
 </table>
 
-###### Table 25. Basics - Win - OIB - ES - Windows LAPS - D - LAPS Configuration - v3.1
+###### Table 27. Basics - Win - OIB - ES - Windows LAPS - D - LAPS Configuration - v3.1
 
 
 <table class='table-settings'>
@@ -1621,10 +1889,10 @@
 </tr>
 </table>
 
-###### Table 26. Settings - Win - OIB - ES - Windows LAPS - D - LAPS Configuration - v3.1
+###### Table 28. Settings - Win - OIB - ES - Windows LAPS - D - LAPS Configuration - v3.1
 
 
-<h3 id="section-16">Win - OIB - ES - Windows LAPS - D - LAPS Configuration (24H2+) - v3.6</h3>
+<h3 id="section-17">Win - OIB - ES - Windows LAPS - D - LAPS Configuration (24H2+) - v3.6</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -1640,7 +1908,7 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Description</td>
-<td class='property-column2'>NOTE: For 24H2+ devices only.</td>
+<td class='property-column2'>NOTE: For 24H2+ devices only.<br />IMPORTANT: Ensure LAPS is enabled in Entra Device Settings: https://entra.microsoft.com/#view/Microsoft_AAD_Devices/DevicesMenuBlade/~/DeviceSettings/menuId/Overview</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Profile type</td>
@@ -1664,7 +1932,7 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>12 May 2025 14:28:22</td>
+<td class='property-column2'>28 January 2026 13:27:53</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -1672,7 +1940,7 @@
 </tr>
 </table>
 
-###### Table 27. Basics - Win - OIB - ES - Windows LAPS - D - LAPS Configuration (24H2+) - v3.6
+###### Table 29. Basics - Win - OIB - ES - Windows LAPS - D - LAPS Configuration (24H2+) - v3.6
 
 
 <table class='table-settings'>
@@ -1730,10 +1998,10 @@
 </tr>
 </table>
 
-###### Table 28. Settings - Win - OIB - ES - Windows LAPS - D - LAPS Configuration (24H2+) - v3.6
+###### Table 30. Settings - Win - OIB - ES - Windows LAPS - D - LAPS Configuration (24H2+) - v3.6
 
 
-<h3 id="section-17">Win - OIB - SC - Credential Management - D - Passwordless - v3.3</h3>
+<h3 id="section-18">Win - OIB - SC - Credential Management - D - Passwordless - v3.3</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -1773,7 +2041,7 @@
 </tr>
 </table>
 
-###### Table 29. Basics - Win - OIB - SC - Credential Management - D - Passwordless - v3.3
+###### Table 31. Basics - Win - OIB - SC - Credential Management - D - Passwordless - v3.3
 
 
 <table class='table-settings'>
@@ -1808,10 +2076,10 @@
 </tr>
 </table>
 
-###### Table 30. Settings - Win - OIB - SC - Credential Management - D - Passwordless - v3.3
+###### Table 32. Settings - Win - OIB - SC - Credential Management - D - Passwordless - v3.3
 
 
-<h3 id="section-18">Win - OIB - SC - Defender Antivirus - D - Additional Configuration - v3.6</h3>
+<h3 id="section-19">Win - OIB - SC - Defender Antivirus - D - Additional Configuration - v3.8</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -1823,7 +2091,7 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Name</td>
-<td class='property-column2'>Win - OIB - SC - Defender Antivirus - D - Additional Configuration - v3.6</td>
+<td class='property-column2'>Win - OIB - SC - Defender Antivirus - D - Additional Configuration - v3.8</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Description</td>
@@ -1843,7 +2111,7 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>08 May 2025 15:15:08</td>
+<td class='property-column2'>05 March 2026 10:21:42</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -1851,7 +2119,7 @@
 </tr>
 </table>
 
-###### Table 31. Basics - Win - OIB - SC - Defender Antivirus - D - Additional Configuration - v3.6
+###### Table 33. Basics - Win - OIB - SC - Defender Antivirus - D - Additional Configuration - v3.8
 
 
 <table class='table-settings'>
@@ -1883,10 +2151,6 @@
 <td class='property-column2'>If you enable this setting, local users will no longer be able to see the exclusion list in Windows Security App or via PowerShell.</td>
 </tr>
 <tr class=''>
-<td class='property-column1'>Intel TDT Enabled</td>
-<td class='property-column2'>If you configure this setting to enabled, Intel TDT integration will turn on.</td>
-</tr>
-<tr class=''>
 <td class='property-column1'>Oobe Enable Rtp And Sig Update</td>
 <td class='property-column2'>If you enable this setting, real-time protection and Security Intelligence Updates are enabled during OOBE.</td>
 </tr>
@@ -1904,10 +2168,10 @@
 </tr>
 </table>
 
-###### Table 32. Settings - Win - OIB - SC - Defender Antivirus - D - Additional Configuration - v3.6
+###### Table 34. Settings - Win - OIB - SC - Defender Antivirus - D - Additional Configuration - v3.8
 
 
-<h3 id="section-19">Win - OIB - SC - Device Security - D - Administrator Protection - v3.7</h3>
+<h3 id="section-20">Win - OIB - SC - Device Security - D - Administrator Protection - v3.7</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -1947,7 +2211,7 @@
 </tr>
 </table>
 
-###### Table 33. Basics - Win - OIB - SC - Device Security - D - Administrator Protection - v3.7
+###### Table 35. Basics - Win - OIB - SC - Device Security - D - Administrator Protection - v3.7
 
 
 <table class='table-settings'>
@@ -1968,10 +2232,10 @@
 </tr>
 </table>
 
-###### Table 34. Settings - Win - OIB - SC - Device Security - D - Administrator Protection - v3.7
+###### Table 36. Settings - Win - OIB - SC - Device Security - D - Administrator Protection - v3.7
 
 
-<h3 id="section-20">Win - OIB - SC - Device Security - D - Audit and Event Logging - v3.7</h3>
+<h3 id="section-21">Win - OIB - SC - Device Security - D - Audit and Event Logging - v3.7</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -2011,7 +2275,7 @@
 </tr>
 </table>
 
-###### Table 35. Basics - Win - OIB - SC - Device Security - D - Audit and Event Logging - v3.7
+###### Table 37. Basics - Win - OIB - SC - Device Security - D - Audit and Event Logging - v3.7
 
 
 <table class='table-settings'>
@@ -2202,10 +2466,10 @@
 </tr>
 </table>
 
-###### Table 36. Settings - Win - OIB - SC - Device Security - D - Audit and Event Logging - v3.7
+###### Table 38. Settings - Win - OIB - SC - Device Security - D - Audit and Event Logging - v3.7
 
 
-<h3 id="section-21">Win - OIB - SC - Device Security - D - Config Refresh - v3.2</h3>
+<h3 id="section-22">Win - OIB - SC - Device Security - D - Config Refresh - v3.2</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -2245,7 +2509,7 @@
 </tr>
 </table>
 
-###### Table 37. Basics - Win - OIB - SC - Device Security - D - Config Refresh - v3.2
+###### Table 39. Basics - Win - OIB - SC - Device Security - D - Config Refresh - v3.2
 
 
 <table class='table-settings'>
@@ -2270,10 +2534,10 @@
 </tr>
 </table>
 
-###### Table 38. Settings - Win - OIB - SC - Device Security - D - Config Refresh - v3.2
+###### Table 40. Settings - Win - OIB - SC - Device Security - D - Config Refresh - v3.2
 
 
-<h3 id="section-22">Win - OIB - SC - Device Security - D - Enhanced Phishing Protection - v3.0</h3>
+<h3 id="section-23">Win - OIB - SC - Device Security - D - Enhanced Phishing Protection - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -2313,7 +2577,7 @@
 </tr>
 </table>
 
-###### Table 39. Basics - Win - OIB - SC - Device Security - D - Enhanced Phishing Protection - v3.0
+###### Table 41. Basics - Win - OIB - SC - Device Security - D - Enhanced Phishing Protection - v3.0
 
 
 <table class='table-settings'>
@@ -2345,10 +2609,10 @@
 </tr>
 </table>
 
-###### Table 40. Settings - Win - OIB - SC - Device Security - D - Enhanced Phishing Protection - v3.0
+###### Table 42. Settings - Win - OIB - SC - Device Security - D - Enhanced Phishing Protection - v3.0
 
 
-<h3 id="section-23">Win - OIB - SC - Device Security - D - Local Security Policies - v3.0</h3>
+<h3 id="section-24">Win - OIB - SC - Device Security - D - Local Security Policies - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -2388,7 +2652,7 @@
 </tr>
 </table>
 
-###### Table 41. Basics - Win - OIB - SC - Device Security - D - Local Security Policies - v3.0
+###### Table 43. Basics - Win - OIB - SC - Device Security - D - Local Security Policies - v3.0
 
 
 <table class='table-settings'>
@@ -2493,10 +2757,10 @@
 </tr>
 </table>
 
-###### Table 42. Settings - Win - OIB - SC - Device Security - D - Local Security Policies - v3.0
+###### Table 44. Settings - Win - OIB - SC - Device Security - D - Local Security Policies - v3.0
 
 
-<h3 id="section-24">Win - OIB - SC - Device Security - D - Local Security Policies (24H2+) - v3.6</h3>
+<h3 id="section-25">Win - OIB - SC - Device Security - D - Local Security Policies (24H2+) - v3.6</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -2536,7 +2800,7 @@
 </tr>
 </table>
 
-###### Table 43. Basics - Win - OIB - SC - Device Security - D - Local Security Policies (24H2+) - v3.6
+###### Table 45. Basics - Win - OIB - SC - Device Security - D - Local Security Policies (24H2+) - v3.6
 
 
 <table class='table-settings'>
@@ -2641,10 +2905,10 @@
 </tr>
 </table>
 
-###### Table 44. Settings - Win - OIB - SC - Device Security - D - Local Security Policies (24H2+) - v3.6
+###### Table 46. Settings - Win - OIB - SC - Device Security - D - Local Security Policies (24H2+) - v3.6
 
 
-<h3 id="section-25">Win - OIB - SC - Device Security - D - Location and Privacy - v3.2</h3>
+<h3 id="section-26">Win - OIB - SC - Device Security - D - Location and Privacy - v3.2</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -2684,7 +2948,7 @@
 </tr>
 </table>
 
-###### Table 45. Basics - Win - OIB - SC - Device Security - D - Location and Privacy - v3.2
+###### Table 47. Basics - Win - OIB - SC - Device Security - D - Location and Privacy - v3.2
 
 
 <table class='table-settings'>
@@ -2712,10 +2976,10 @@
 </tr>
 </table>
 
-###### Table 46. Settings - Win - OIB - SC - Device Security - D - Location and Privacy - v3.2
+###### Table 48. Settings - Win - OIB - SC - Device Security - D - Location and Privacy - v3.2
 
 
-<h3 id="section-26">Win - OIB - SC - Device Security - D - Login and Lock Screen - v3.1</h3>
+<h3 id="section-27">Win - OIB - SC - Device Security - D - Login and Lock Screen - v3.8</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -2727,7 +2991,7 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Name</td>
-<td class='property-column2'>Win - OIB - SC - Device Security - D - Login and Lock Screen - v3.1</td>
+<td class='property-column2'>Win - OIB - SC - Device Security - D - Login and Lock Screen - v3.8</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Description</td>
@@ -2747,7 +3011,7 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 19:42:22</td>
+<td class='property-column2'>16 April 2026 12:34:32</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -2755,7 +3019,7 @@
 </tr>
 </table>
 
-###### Table 47. Basics - Win - OIB - SC - Device Security - D - Login and Lock Screen - v3.1
+###### Table 49. Basics - Win - OIB - SC - Device Security - D - Login and Lock Screen - v3.8
 
 
 <table class='table-settings'>
@@ -2800,22 +3064,7 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Do not display the password reveal button</td>
-<td class='property-column2'>Enabled</td>
-</tr>
-<tr>
-<td colspan="2" class='category-level2'>Windows Logon Options</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Configure the mode of automatically signing in and locking last interactive user after a restart or cold boot</td>
-<td class='property-column2'>Enabled</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Configure the mode of automatically signing in and locking last interactive user after a restart or cold boot (Device)</td>
-<td class='property-column2'>Enabled if BitLocker is on and not suspended</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Sign-in and lock last interactive user automatically after a restart</td>
-<td class='property-column2'>Enabled</td>
+<td class='property-column2'>Disabled</td>
 </tr>
 <tr>
 <td colspan="2" class='category-level1'>Authentication</td>
@@ -2833,10 +3082,10 @@
 </tr>
 </table>
 
-###### Table 48. Settings - Win - OIB - SC - Device Security - D - Login and Lock Screen - v3.1
+###### Table 50. Settings - Win - OIB - SC - Device Security - D - Login and Lock Screen - v3.8
 
 
-<h3 id="section-27">Win - OIB - SC - Device Security - D - Printing - v3.7</h3>
+<h3 id="section-28">Win - OIB - SC - Device Security - D - Printing - v3.7</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -2876,7 +3125,7 @@
 </tr>
 </table>
 
-###### Table 49. Basics - Win - OIB - SC - Device Security - D - Printing - v3.7
+###### Table 51. Basics - Win - OIB - SC - Device Security - D - Printing - v3.7
 
 
 <table class='table-settings'>
@@ -2972,10 +3221,10 @@
 </tr>
 </table>
 
-###### Table 50. Settings - Win - OIB - SC - Device Security - D - Printing - v3.7
+###### Table 52. Settings - Win - OIB - SC - Device Security - D - Printing - v3.7
 
 
-<h3 id="section-28">Win - OIB - SC - Device Security - D - Remote Desktop Services and RPC - v3.0</h3>
+<h3 id="section-29">Win - OIB - SC - Device Security - D - Remote Desktop Services and RPC - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -3015,7 +3264,7 @@
 </tr>
 </table>
 
-###### Table 51. Basics - Win - OIB - SC - Device Security - D - Remote Desktop Services and RPC - v3.0
+###### Table 53. Basics - Win - OIB - SC - Device Security - D - Remote Desktop Services and RPC - v3.0
 
 
 <table class='table-settings'>
@@ -3088,10 +3337,10 @@
 </tr>
 </table>
 
-###### Table 52. Settings - Win - OIB - SC - Device Security - D - Remote Desktop Services and RPC - v3.0
+###### Table 54. Settings - Win - OIB - SC - Device Security - D - Remote Desktop Services and RPC - v3.0
 
 
-<h3 id="section-29">Win - OIB - SC - Device Security - D - Script File Associations - v3.4</h3>
+<h3 id="section-30">Win - OIB - SC - Device Security - D - Script File Associations - v3.4</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -3131,7 +3380,7 @@
 </tr>
 </table>
 
-###### Table 53. Basics - Win - OIB - SC - Device Security - D - Script File Associations - v3.4
+###### Table 55. Basics - Win - OIB - SC - Device Security - D - Script File Associations - v3.4
 
 
 <table class='table-settings'>
@@ -3148,10 +3397,10 @@
 </tr>
 </table>
 
-###### Table 54. Settings - Win - OIB - SC - Device Security - D - Script File Associations - v3.4
+###### Table 56. Settings - Win - OIB - SC - Device Security - D - Script File Associations - v3.4
 
 
-<h3 id="section-30">Win - OIB - SC - Device Security - D - Security Hardening - v3.7</h3>
+<h3 id="section-31">Win - OIB - SC - Device Security - D - Security Hardening - v3.7</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -3191,7 +3440,7 @@
 </tr>
 </table>
 
-###### Table 55. Basics - Win - OIB - SC - Device Security - D - Security Hardening - v3.7
+###### Table 57. Basics - Win - OIB - SC - Device Security - D - Security Hardening - v3.7
 
 
 <table class='table-settings'>
@@ -3696,10 +3945,10 @@
 </tr>
 </table>
 
-###### Table 56. Settings - Win - OIB - SC - Device Security - D - Security Hardening - v3.7
+###### Table 58. Settings - Win - OIB - SC - Device Security - D - Security Hardening - v3.7
 
 
-<h3 id="section-31">Win - OIB - SC - Device Security - D - Timezone - v3.4</h3>
+<h3 id="section-32">Win - OIB - SC - Device Security - D - Timezone - v3.4</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -3739,7 +3988,7 @@
 </tr>
 </table>
 
-###### Table 57. Basics - Win - OIB - SC - Device Security - D - Timezone - v3.4
+###### Table 59. Basics - Win - OIB - SC - Device Security - D - Timezone - v3.4
 
 
 <table class='table-settings'>
@@ -3798,10 +4047,10 @@
 </tr>
 </table>
 
-###### Table 58. Settings - Win - OIB - SC - Device Security - D - Timezone - v3.4
+###### Table 60. Settings - Win - OIB - SC - Device Security - D - Timezone - v3.4
 
 
-<h3 id="section-32">Win - OIB - SC - Device Security - D - User Rights - v3.7</h3>
+<h3 id="section-33">Win - OIB - SC - Device Security - D - User Rights - v3.7</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -3841,7 +4090,7 @@
 </tr>
 </table>
 
-###### Table 59. Basics - Win - OIB - SC - Device Security - D - User Rights - v3.7
+###### Table 61. Basics - Win - OIB - SC - Device Security - D - User Rights - v3.7
 
 
 <table class='table-settings'>
@@ -3954,10 +4203,10 @@
 </tr>
 </table>
 
-###### Table 60. Settings - Win - OIB - SC - Device Security - D - User Rights - v3.7
+###### Table 62. Settings - Win - OIB - SC - Device Security - D - User Rights - v3.7
 
 
-<h3 id="section-33">Win - OIB - SC - Device Security - D - Windows Package Manager  - v3.5</h3>
+<h3 id="section-34">Win - OIB - SC - Device Security - D - Windows Package Manager  - v3.5</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -3997,7 +4246,7 @@
 </tr>
 </table>
 
-###### Table 61. Basics - Win - OIB - SC - Device Security - D - Windows Package Manager  - v3.5
+###### Table 63. Basics - Win - OIB - SC - Device Security - D - Windows Package Manager  - v3.5
 
 
 <table class='table-settings'>
@@ -4033,10 +4282,10 @@
 </tr>
 </table>
 
-###### Table 62. Settings - Win - OIB - SC - Device Security - D - Windows Package Manager  - v3.5
+###### Table 64. Settings - Win - OIB - SC - Device Security - D - Windows Package Manager  - v3.5
 
 
-<h3 id="section-34">Win - OIB - SC - Device Security - D - Windows Subsystem for Linux - v3.2</h3>
+<h3 id="section-35">Win - OIB - SC - Device Security - D - Windows Subsystem for Linux - v3.2</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -4076,7 +4325,7 @@
 </tr>
 </table>
 
-###### Table 63. Basics - Win - OIB - SC - Device Security - D - Windows Subsystem for Linux - v3.2
+###### Table 65. Basics - Win - OIB - SC - Device Security - D - Windows Subsystem for Linux - v3.2
 
 
 <table class='table-settings'>
@@ -4129,10 +4378,10 @@
 </tr>
 </table>
 
-###### Table 64. Settings - Win - OIB - SC - Device Security - D - Windows Subsystem for Linux - v3.2
+###### Table 66. Settings - Win - OIB - SC - Device Security - D - Windows Subsystem for Linux - v3.2
 
 
-<h3 id="section-35">Win - OIB - SC - Device Security - U - Device Guard, Credential Guard and HVCI - v3.7</h3>
+<h3 id="section-36">Win - OIB - SC - Device Security - U - Device Guard, Credential Guard and HVCI - v3.7</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -4172,7 +4421,7 @@
 </tr>
 </table>
 
-###### Table 65. Basics - Win - OIB - SC - Device Security - U - Device Guard, Credential Guard and HVCI - v3.7
+###### Table 67. Basics - Win - OIB - SC - Device Security - U - Device Guard, Credential Guard and HVCI - v3.7
 
 
 <table class='table-settings'>
@@ -4223,10 +4472,10 @@
 </tr>
 </table>
 
-###### Table 66. Settings - Win - OIB - SC - Device Security - U - Device Guard, Credential Guard and HVCI - v3.7
+###### Table 68. Settings - Win - OIB - SC - Device Security - U - Device Guard, Credential Guard and HVCI - v3.7
 
 
-<h3 id="section-36">Win - OIB - SC - Device Security - U - Power and Device Lock - v3.6</h3>
+<h3 id="section-37">Win - OIB - SC - Device Security - U - Power and Device Lock - v3.6</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -4266,7 +4515,7 @@
 </tr>
 </table>
 
-###### Table 67. Basics - Win - OIB - SC - Device Security - U - Power and Device Lock - v3.6
+###### Table 69. Basics - Win - OIB - SC - Device Security - U - Power and Device Lock - v3.6
 
 
 <table class='table-settings'>
@@ -4336,10 +4585,10 @@
 </tr>
 </table>
 
-###### Table 68. Settings - Win - OIB - SC - Device Security - U - Power and Device Lock - v3.6
+###### Table 70. Settings - Win - OIB - SC - Device Security - U - Power and Device Lock - v3.6
 
 
-<h3 id="section-37">Win - OIB - SC - Device Security - U - Windows Sandbox - v3.4</h3>
+<h3 id="section-38">Win - OIB - SC - Device Security - U - Windows Sandbox - v3.4</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -4379,7 +4628,7 @@
 </tr>
 </table>
 
-###### Table 69. Basics - Win - OIB - SC - Device Security - U - Windows Sandbox - v3.4
+###### Table 71. Basics - Win - OIB - SC - Device Security - U - Windows Sandbox - v3.4
 
 
 <table class='table-settings'>
@@ -4416,10 +4665,10 @@
 </tr>
 </table>
 
-###### Table 70. Settings - Win - OIB - SC - Device Security - U - Windows Sandbox - v3.4
+###### Table 72. Settings - Win - OIB - SC - Device Security - U - Windows Sandbox - v3.4
 
 
-<h3 id="section-38">Win - OIB - SC - Device Security - U - Windows Spotlight and Org Messages - v3.0</h3>
+<h3 id="section-39">Win - OIB - SC - Device Security - U - Windows Spotlight and Org Messages - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -4459,7 +4708,7 @@
 </tr>
 </table>
 
-###### Table 71. Basics - Win - OIB - SC - Device Security - U - Windows Spotlight and Org Messages - v3.0
+###### Table 73. Basics - Win - OIB - SC - Device Security - U - Windows Spotlight and Org Messages - v3.0
 
 
 <table class='table-settings'>
@@ -4520,10 +4769,10 @@
 </tr>
 </table>
 
-###### Table 72. Settings - Win - OIB - SC - Device Security - U - Windows Spotlight and Org Messages - v3.0
+###### Table 74. Settings - Win - OIB - SC - Device Security - U - Windows Spotlight and Org Messages - v3.0
 
 
-<h3 id="section-39">Win - OIB - SC - Internet Explorer (Legacy) - D - Security - v3.1.1</h3>
+<h3 id="section-40">Win - OIB - SC - Internet Explorer (Legacy) - D - Security - v3.1.1</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -4563,7 +4812,7 @@
 </tr>
 </table>
 
-###### Table 73. Basics - Win - OIB - SC - Internet Explorer (Legacy) - D - Security - v3.1.1
+###### Table 75. Basics - Win - OIB - SC - Internet Explorer (Legacy) - D - Security - v3.1.1
 
 
 <table class='table-settings'>
@@ -5476,10 +5725,10 @@
 </tr>
 </table>
 
-###### Table 74. Settings - Win - OIB - SC - Internet Explorer (Legacy) - D - Security - v3.1.1
+###### Table 76. Settings - Win - OIB - SC - Internet Explorer (Legacy) - D - Security - v3.1.1
 
 
-<h3 id="section-40">Win - OIB - SC - Microsoft Accounts - D - Configuration - v3.2</h3>
+<h3 id="section-41">Win - OIB - SC - Microsoft Accounts - D - Configuration - v3.2</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -5519,7 +5768,7 @@
 </tr>
 </table>
 
-###### Table 75. Basics - Win - OIB - SC - Microsoft Accounts - D - Configuration - v3.2
+###### Table 77. Basics - Win - OIB - SC - Microsoft Accounts - D - Configuration - v3.2
 
 
 <table class='table-settings'>
@@ -5564,10 +5813,10 @@
 </tr>
 </table>
 
-###### Table 76. Settings - Win - OIB - SC - Microsoft Accounts - D - Configuration - v3.2
+###### Table 78. Settings - Win - OIB - SC - Microsoft Accounts - D - Configuration - v3.2
 
 
-<h3 id="section-41">Win - OIB - SC - Microsoft Edge - D - Security - v3.7</h3>
+<h3 id="section-42">Win - OIB - SC - Microsoft Edge - D - Security - v3.8</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -5579,7 +5828,7 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Name</td>
-<td class='property-column2'>Win - OIB - SC - Microsoft Edge - D - Security - v3.7</td>
+<td class='property-column2'>Win - OIB - SC - Microsoft Edge - D - Security - v3.8</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Description</td>
@@ -5599,7 +5848,7 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>13 August 2025 13:25:08</td>
+<td class='property-column2'>29 January 2026 10:42:41</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -5607,7 +5856,7 @@
 </tr>
 </table>
 
-###### Table 77. Basics - Win - OIB - SC - Microsoft Edge - D - Security - v3.7
+###### Table 79. Basics - Win - OIB - SC - Microsoft Edge - D - Security - v3.8
 
 
 <table class='table-settings'>
@@ -5743,8 +5992,12 @@
 <td class='property-column2'>Enabled</td>
 </tr>
 <tr class=''>
-<td class='property-column1'>Enable renderer code integrity (deprecated)</td>
+<td class='property-column1'>Enable network prediction</td>
 <td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Enable network prediction (Device)</td>
+<td class='property-column2'>Don't predict network actions on any network connection</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Enable site isolation for every site</td>
@@ -5782,7 +6035,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Configure users ability to override feature flags</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Configure users ability to override feature flags (Device)</td>
+<td class='property-column2'>Prevent users from overriding feature flags</td>
 </tr>
 <tr>
 <td colspan="2" class='category-level2'>HTTP authentication</td>
@@ -5825,6 +6082,10 @@
 <td class='property-column2'>Enabled</td>
 </tr>
 <tr class=''>
+<td class='property-column1'>Enable Microsoft Defender SmartScreen DNS requests</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
 <td class='property-column1'>Force Microsoft Defender SmartScreen checks on downloads from trusted sources</td>
 <td class='property-column2'>Enabled</td>
 </tr>
@@ -5845,10 +6106,10 @@
 </tr>
 </table>
 
-###### Table 78. Settings - Win - OIB - SC - Microsoft Edge - D - Security - v3.7
+###### Table 80. Settings - Win - OIB - SC - Microsoft Edge - D - Security - v3.8
 
 
-<h3 id="section-42">Win - OIB - SC - Microsoft Edge - D - Updates - v3.6</h3>
+<h3 id="section-43">Win - OIB - SC - Microsoft Edge - D - Updates - v3.6</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -5888,7 +6149,7 @@
 </tr>
 </table>
 
-###### Table 79. Basics - Win - OIB - SC - Microsoft Edge - D - Updates - v3.6
+###### Table 81. Basics - Win - OIB - SC - Microsoft Edge - D - Updates - v3.6
 
 
 <table class='table-settings'>
@@ -6004,10 +6265,10 @@
 </tr>
 </table>
 
-###### Table 80. Settings - Win - OIB - SC - Microsoft Edge - D - Updates - v3.6
+###### Table 82. Settings - Win - OIB - SC - Microsoft Edge - D - Updates - v3.6
 
 
-<h3 id="section-43">Win - OIB - SC - Microsoft Edge - U - Extensions - v3.1</h3>
+<h3 id="section-44">Win - OIB - SC - Microsoft Edge - U - Extensions - v3.1</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -6047,7 +6308,7 @@
 </tr>
 </table>
 
-###### Table 81. Basics - Win - OIB - SC - Microsoft Edge - U - Extensions - v3.1
+###### Table 83. Basics - Win - OIB - SC - Microsoft Edge - U - Extensions - v3.1
 
 
 <table class='table-settings'>
@@ -6087,10 +6348,10 @@
 </tr>
 </table>
 
-###### Table 82. Settings - Win - OIB - SC - Microsoft Edge - U - Extensions - v3.1
+###### Table 84. Settings - Win - OIB - SC - Microsoft Edge - U - Extensions - v3.1
 
 
-<h3 id="section-44">Win - OIB - SC - Microsoft Edge - U - Password Management - v3.0</h3>
+<h3 id="section-45">Win - OIB - SC - Microsoft Edge - U - Password Management - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -6130,7 +6391,7 @@
 </tr>
 </table>
 
-###### Table 83. Basics - Win - OIB - SC - Microsoft Edge - U - Password Management - v3.0
+###### Table 85. Basics - Win - OIB - SC - Microsoft Edge - U - Password Management - v3.0
 
 
 <table class='table-settings'>
@@ -6166,10 +6427,10 @@
 </tr>
 </table>
 
-###### Table 84. Settings - Win - OIB - SC - Microsoft Edge - U - Password Management - v3.0
+###### Table 86. Settings - Win - OIB - SC - Microsoft Edge - U - Password Management - v3.0
 
 
-<h3 id="section-45">Win - OIB - SC - Microsoft Edge - U - Profiles, Sign-In and Sync - v3.0</h3>
+<h3 id="section-46">Win - OIB - SC - Microsoft Edge - U - Profiles, Sign-In and Sync - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -6209,7 +6470,7 @@
 </tr>
 </table>
 
-###### Table 85. Basics - Win - OIB - SC - Microsoft Edge - U - Profiles, Sign-In and Sync - v3.0
+###### Table 87. Basics - Win - OIB - SC - Microsoft Edge - U - Profiles, Sign-In and Sync - v3.0
 
 
 <table class='table-settings'>
@@ -6261,10 +6522,10 @@
 </tr>
 </table>
 
-###### Table 86. Settings - Win - OIB - SC - Microsoft Edge - U - Profiles, Sign-In and Sync - v3.0
+###### Table 88. Settings - Win - OIB - SC - Microsoft Edge - U - Profiles, Sign-In and Sync - v3.0
 
 
-<h3 id="section-46">Win - OIB - SC - Microsoft Edge - U - User Experience - v3.7</h3>
+<h3 id="section-47">Win - OIB - SC - Microsoft Edge - U - User Experience - v3.8</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -6276,7 +6537,7 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Name</td>
-<td class='property-column2'>Win - OIB - SC - Microsoft Edge - U - User Experience - v3.7</td>
+<td class='property-column2'>Win - OIB - SC - Microsoft Edge - U - User Experience - v3.8</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Description</td>
@@ -6296,7 +6557,7 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>13 August 2025 13:21:58</td>
+<td class='property-column2'>09 April 2026 11:02:01</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -6304,7 +6565,7 @@
 </tr>
 </table>
 
-###### Table 87. Basics - Win - OIB - SC - Microsoft Edge - U - User Experience - v3.7
+###### Table 89. Basics - Win - OIB - SC - Microsoft Edge - U - User Experience - v3.8
 
 
 <table class='table-settings'>
@@ -6317,6 +6578,18 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Allow users to access the games menu (User)</td>
+<td class='property-column2'>Disabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Block access to a list of URLs (User)</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Block access to a list of URLs (User)</td>
+<td class='property-column2'>https://apps.microsoft.com;https://apps.microsoft.com/`*;apps.microsoft.com;apps.microsoft.com/`*</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Control whether an informational webpage for Edge for Business is shown in the new tab after major browser updates (User)</td>
 <td class='property-column2'>Disabled</td>
 </tr>
 <tr class=''>
@@ -6334,6 +6607,25 @@
 <tr class=''>
 <td class='property-column1'>Shows button on native PDF viewer in Microsoft Edge that allows users to sign up for Adobe Acrobat subscription (User)</td>
 <td class='property-column2'>Disabled</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level2'>Content settings</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Allow notifications on specific sites (User)</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Allow notifications on specific sites (User)</td>
+<td class='property-column2'>`*.microsoft.com;`*.cloud.microsoft</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Default notification setting (User)</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Default notification setting (User)</td>
+<td class='property-column2'>Don't allow any site to show desktop notifications</td>
 </tr>
 <tr>
 <td colspan="2" class='category-level2'>Edge Workspaces settings</td>
@@ -6387,10 +6679,10 @@
 </tr>
 </table>
 
-###### Table 88. Settings - Win - OIB - SC - Microsoft Edge - U - User Experience - v3.7
+###### Table 90. Settings - Win - OIB - SC - Microsoft Edge - U - User Experience - v3.8
 
 
-<h3 id="section-47">Win - OIB - SC - Microsoft Office - D - Security - v3.6</h3>
+<h3 id="section-48">Win - OIB - SC - Microsoft Office - D - Security - v3.6</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -6430,7 +6722,7 @@
 </tr>
 </table>
 
-###### Table 89. Basics - Win - OIB - SC - Microsoft Office - D - Security - v3.6
+###### Table 91. Basics - Win - OIB - SC - Microsoft Office - D - Security - v3.6
 
 
 <table class='table-settings'>
@@ -7291,10 +7583,10 @@
 </tr>
 </table>
 
-###### Table 90. Settings - Win - OIB - SC - Microsoft Office - D - Security - v3.6
+###### Table 92. Settings - Win - OIB - SC - Microsoft Office - D - Security - v3.6
 
 
-<h3 id="section-48">Win - OIB - SC - Microsoft Office - D - Updates - v3.0</h3>
+<h3 id="section-49">Win - OIB - SC - Microsoft Office - D - Updates - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -7334,7 +7626,7 @@
 </tr>
 </table>
 
-###### Table 91. Basics - Win - OIB - SC - Microsoft Office - D - Updates - v3.0
+###### Table 93. Basics - Win - OIB - SC - Microsoft Office - D - Updates - v3.0
 
 
 <table class='table-settings'>
@@ -7374,10 +7666,10 @@
 </tr>
 </table>
 
-###### Table 92. Settings - Win - OIB - SC - Microsoft Office - D - Updates - v3.0
+###### Table 94. Settings - Win - OIB - SC - Microsoft Office - D - Updates - v3.0
 
 
-<h3 id="section-49">Win - OIB - SC - Microsoft Office - U - Config and Experience - v3.6</h3>
+<h3 id="section-50">Win - OIB - SC - Microsoft Office - U - Config and Experience - v3.6</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -7417,7 +7709,7 @@
 </tr>
 </table>
 
-###### Table 93. Basics - Win - OIB - SC - Microsoft Office - U - Config and Experience - v3.6
+###### Table 95. Basics - Win - OIB - SC - Microsoft Office - U - Config and Experience - v3.6
 
 
 <table class='table-settings'>
@@ -7594,10 +7886,10 @@
 </tr>
 </table>
 
-###### Table 94. Settings - Win - OIB - SC - Microsoft Office - U - Config and Experience - v3.6
+###### Table 96. Settings - Win - OIB - SC - Microsoft Office - U - Config and Experience - v3.6
 
 
-<h3 id="section-50">Win - OIB - SC - Microsoft Office - U - Security - v3.6</h3>
+<h3 id="section-51">Win - OIB - SC - Microsoft Office - U - Security - v3.6</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -7637,7 +7929,7 @@
 </tr>
 </table>
 
-###### Table 95. Basics - Win - OIB - SC - Microsoft Office - U - Security - v3.6
+###### Table 97. Basics - Win - OIB - SC - Microsoft Office - U - Security - v3.6
 
 
 <table class='table-settings'>
@@ -8657,10 +8949,10 @@
 </tr>
 </table>
 
-###### Table 96. Settings - Win - OIB - SC - Microsoft Office - U - Security - v3.6
+###### Table 98. Settings - Win - OIB - SC - Microsoft Office - U - Security - v3.6
 
 
-<h3 id="section-51">Win - OIB - SC - Microsoft OneDrive - D - Configuration - v3.2</h3>
+<h3 id="section-52">Win - OIB - SC - Microsoft OneDrive - D - Configuration - v3.2</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -8700,7 +8992,7 @@
 </tr>
 </table>
 
-###### Table 97. Basics - Win - OIB - SC - Microsoft OneDrive - D - Configuration - v3.2
+###### Table 99. Basics - Win - OIB - SC - Microsoft OneDrive - D - Configuration - v3.2
 
 
 <table class='table-settings'>
@@ -8717,7 +9009,7 @@
 </tr>
 <tr class=''>
 <td class='property-column1' style='padding-left:10px !important;'>Tenant ID: (Device)</td>
-<td class='property-column2'>%OrganizationID%</td>
+<td class='property-column2'>%OrganizationId%</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Allow users to contact Microsoft for feedback and support</td>
@@ -8737,7 +9029,7 @@
 </tr>
 <tr class=''>
 <td class='property-column1' style='padding-left:10px !important;'>Keywords: (Device)</td>
-<td class='property-column2'>*.accdb;*.appx;*.bat;*.cmd;*.exe,*.img;*.iso;*.jar;*.lnk;*.mdb;*.msi;*.pst;*.reg;*.vbs;*.vhd;*.vhdx;*.vmdk</td>
+<td class='property-column2'>`*.accdb;`*.appx;`*.bat;`*.cmd;`*.exe;`*.img;`*.iso;`*.jar;`*.lnk;`*.mdb;`*.msi;`*.pst;`*.reg;`*.vbs;`*.vhd;`*.vhdx;`*.vmdk</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Prevent users from redirecting their Windows known folders to their PC</td>
@@ -8773,7 +9065,7 @@
 </tr>
 <tr class=''>
 <td class='property-column1' style='padding-left:10px !important;'>Tenant ID: (Device)</td>
-<td class='property-column2'>%OrganizationID%</td>
+<td class='property-column2'>%OrganizationId%</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Silently sign in users to the OneDrive sync app with their Windows credentials</td>
@@ -8785,10 +9077,10 @@
 </tr>
 </table>
 
-###### Table 98. Settings - Win - OIB - SC - Microsoft OneDrive - D - Configuration - v3.2
+###### Table 100. Settings - Win - OIB - SC - Microsoft OneDrive - D - Configuration - v3.2
 
 
-<h3 id="section-52">Win - OIB - SC - Microsoft OneDrive - U - Configuration - v3.0</h3>
+<h3 id="section-53">Win - OIB - SC - Microsoft OneDrive - U - Configuration - v3.8</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -8800,7 +9092,7 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Name</td>
-<td class='property-column2'>Win - OIB - SC - Microsoft OneDrive - U - Configuration - v3.0</td>
+<td class='property-column2'>Win - OIB - SC - Microsoft OneDrive - U - Configuration - v3.8</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Description</td>
@@ -8820,7 +9112,7 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 20:12:44</td>
+<td class='property-column2'>28 January 2026 19:58:25</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -8828,7 +9120,7 @@
 </tr>
 </table>
 
-###### Table 99. Basics - Win - OIB - SC - Microsoft OneDrive - U - Configuration - v3.0
+###### Table 101. Basics - Win - OIB - SC - Microsoft OneDrive - U - Configuration - v3.8
 
 
 <table class='table-settings'>
@@ -8857,7 +9149,7 @@
 </tr>
 <tr class='row-new-property'>
 <td class='property-column1' style='padding-left:15px !important;'>Name</td>
-<td class='property-column2'>%OrganizationID%</td>
+<td class='property-column2'>%OrganizationId%</td>
 </tr>
 <tr class=''>
 <td class='property-column1' style='padding-left:15px !important;'>Value</td>
@@ -8867,12 +9159,16 @@
 <td class='property-column1'>Prevent users from syncing personal OneDrive accounts (User)</td>
 <td class='property-column2'>Enabled</td>
 </tr>
+<tr class=''>
+<td class='property-column1'>Start OneDrive automatically when signing in to Windows (User)</td>
+<td class='property-column2'>Enabled</td>
+</tr>
 </table>
 
-###### Table 100. Settings - Win - OIB - SC - Microsoft OneDrive - U - Configuration - v3.0
+###### Table 102. Settings - Win - OIB - SC - Microsoft OneDrive - U - Configuration - v3.8
 
 
-<h3 id="section-53">Win - OIB - SC - Microsoft Store - D - Configuration - v3.4</h3>
+<h3 id="section-54">Win - OIB - SC - Microsoft Store - D - Configuration - v3.8</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -8884,7 +9180,7 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Name</td>
-<td class='property-column2'>Win - OIB - SC - Microsoft Store - D - Configuration - v3.4</td>
+<td class='property-column2'>Win - OIB - SC - Microsoft Store - D - Configuration - v3.8</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Description</td>
@@ -8900,11 +9196,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>10 April 2024 20:36:24</td>
+<td class='property-column2'>05 March 2026 10:54:42</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 August 2025 14:12:14</td>
+<td class='property-column2'>09 April 2026 10:51:39</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -8912,7 +9208,7 @@
 </tr>
 </table>
 
-###### Table 101. Basics - Win - OIB - SC - Microsoft Store - D - Configuration - v3.4
+###### Table 103. Basics - Win - OIB - SC - Microsoft Store - D - Configuration - v3.8
 
 
 <table class='table-settings'>
@@ -8925,7 +9221,7 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Allow All Trusted Apps</td>
-<td class='property-column2'>Explicit deny.</td>
+<td class='property-column2'>Explicit allow unlock.</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Allow apps from the Microsoft app store to auto update</td>
@@ -8953,10 +9249,10 @@
 </tr>
 </table>
 
-###### Table 102. Settings - Win - OIB - SC - Microsoft Store - D - Configuration - v3.4
+###### Table 104. Settings - Win - OIB - SC - Microsoft Store - D - Configuration - v3.8
 
 
-<h3 id="section-54">Win - OIB - SC - Microsoft Store - U - Configuration - v3.3</h3>
+<h3 id="section-55">Win - OIB - SC - Microsoft Store - U - Configuration - v3.3</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -8996,7 +9292,7 @@
 </tr>
 </table>
 
-###### Table 103. Basics - Win - OIB - SC - Microsoft Store - U - Configuration - v3.3
+###### Table 105. Basics - Win - OIB - SC - Microsoft Store - U - Configuration - v3.3
 
 
 <table class='table-settings'>
@@ -9030,10 +9326,241 @@
 </tr>
 </table>
 
-###### Table 104. Settings - Win - OIB - SC - Microsoft Store - U - Configuration - v3.3
+###### Table 106. Settings - Win - OIB - SC - Microsoft Store - U - Configuration - v3.3
 
 
-<h3 id="section-55">Win - OIB - SC - Windows Hello for Business - D - Cloud Kerberos Trust - v3.5</h3>
+<h3 id="section-56">Win - OIB - SC - Network Security - D - Disable NTLM - v3.8</h3>
+
+<table class='table-settings'>
+<tr class='table-header1'>
+<td>Name</td>
+<td>Value</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>Basics</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Name</td>
+<td class='property-column2'>Win - OIB - SC - Network Security - D - Disable NTLM - v3.8</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Description</td>
+<td class='property-column2'>WARNING: This configuration may break access to legacy applications. Ensure you have no reliance on NTLM before deploying.</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Profile type</td>
+<td class='property-column2'>Settings catalog</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Platform supported</td>
+<td class='property-column2'>Windows 10 and later</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Created</td>
+<td class='property-column2'>09 April 2026 17:15:15</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Last modified</td>
+<td class='property-column2'>16 April 2026 11:50:22</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Scope tags</td>
+<td class='property-column2'>Default</td>
+</tr>
+</table>
+
+###### Table 107. Basics - Win - OIB - SC - Network Security - D - Disable NTLM - v3.8
+
+
+<table class='table-settings'>
+<tr class='table-header1'>
+<td>Name</td>
+<td>Value</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>Local Policies Security Options</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Network Security LAN Manager Authentication Level</td>
+<td class='property-column2'>Send NTLMv2 responses only. Refuse LM and NTLM</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Network Security Restrict NTLM Incoming NTLM Traffic</td>
+<td class='property-column2'>Deny all accounts</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Network Security Restrict NTLM Outgoing NTLM Traffic To Remote Servers</td>
+<td class='property-column2'>Deny all accounts</td>
+</tr>
+</table>
+
+###### Table 108. Settings - Win - OIB - SC - Network Security - D - Disable NTLM - v3.8
+
+
+<h3 id="section-57">Win - OIB - SC - Windows Apps - D - In-Box App Removal - v3.7</h3>
+
+<table class='table-settings'>
+<tr class='table-header1'>
+<td>Name</td>
+<td>Value</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>Basics</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Name</td>
+<td class='property-column2'>Win - OIB - SC - Windows Apps - D - In-Box App Removal - v3.7</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Description</td>
+<td class='property-column2'>NOTE: This policy will only apply to devices running Windows Enterprise</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Profile type</td>
+<td class='property-column2'>Settings catalog</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Platform supported</td>
+<td class='property-column2'>Windows 10 and later</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Created</td>
+<td class='property-column2'>20 October 2025 10:23:55</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Last modified</td>
+<td class='property-column2'>20 October 2025 10:36:31</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Scope tags</td>
+<td class='property-column2'>Default</td>
+</tr>
+</table>
+
+###### Table 109. Basics - Win - OIB - SC - Windows Apps - D - In-Box App Removal - v3.7
+
+
+<table class='table-settings'>
+<tr class='table-header1'>
+<td>Name</td>
+<td>Value</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>Administrative Templates</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level2'>App Package Deployment</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Remove Default Microsoft Store packages from the system.</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Feedback Hub (Device)</td>
+<td class='property-column2'>True</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Microsoft 365 Copilot (Device)</td>
+<td class='property-column2'>False</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Microsoft Clipchamp (Device)</td>
+<td class='property-column2'>False</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Microsoft Copilot (Device)</td>
+<td class='property-column2'>True</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Microsoft News (Device)</td>
+<td class='property-column2'>True</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Microsoft Photos `*`* (Device)</td>
+<td class='property-column2'>False</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Microsoft Solitaire Collection (Device)</td>
+<td class='property-column2'>True</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Microsoft Sticky Notes (Device)</td>
+<td class='property-column2'>False</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Microsoft Teams (Device)</td>
+<td class='property-column2'>False</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Microsoft To Do (Device)</td>
+<td class='property-column2'>False</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>MSN Weather (Device)</td>
+<td class='property-column2'>True</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Outlook for Windows (Device)</td>
+<td class='property-column2'>False</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Paint (Device)</td>
+<td class='property-column2'>False</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Quick Assist (Device)</td>
+<td class='property-column2'>True</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Snipping Tool (Device)</td>
+<td class='property-column2'>False</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Windows Calculator (Device)</td>
+<td class='property-column2'>False</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Windows Camera `*`* (Device)</td>
+<td class='property-column2'>False</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Windows Media Player `*`* (Device)</td>
+<td class='property-column2'>False</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Windows Notepad `*`* (Device)</td>
+<td class='property-column2'>False</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Windows Sound Recorder (Device)</td>
+<td class='property-column2'>False</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Windows Terminal (Device)</td>
+<td class='property-column2'>False</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Xbox Gaming App (Device)</td>
+<td class='property-column2'>True</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Xbox Identity Provider `* (Device)</td>
+<td class='property-column2'>True</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Xbox Speech To Text Overlay `* (Device)</td>
+<td class='property-column2'>True</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Xbox TCUI `* (Device)</td>
+<td class='property-column2'>True</td>
+</tr>
+</table>
+
+###### Table 110. Settings - Win - OIB - SC - Windows Apps - D - In-Box App Removal - v3.7
+
+
+<h3 id="section-58">Win - OIB - SC - Windows Hello for Business - D - Cloud Kerberos Trust - v3.5</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -9073,7 +9600,7 @@
 </tr>
 </table>
 
-###### Table 105. Basics - Win - OIB - SC - Windows Hello for Business - D - Cloud Kerberos Trust - v3.5
+###### Table 111. Basics - Win - OIB - SC - Windows Hello for Business - D - Cloud Kerberos Trust - v3.5
 
 
 <table class='table-settings'>
@@ -9101,10 +9628,10 @@
 </tr>
 </table>
 
-###### Table 106. Settings - Win - OIB - SC - Windows Hello for Business - D - Cloud Kerberos Trust - v3.5
+###### Table 112. Settings - Win - OIB - SC - Windows Hello for Business - D - Cloud Kerberos Trust - v3.5
 
 
-<h3 id="section-56">Win - OIB - SC - Windows Update for Business - D - Delivery Optimisation - v3.0</h3>
+<h3 id="section-59">Win - OIB - SC - Windows Update for Business - D - Delivery Optimisation - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -9144,7 +9671,7 @@
 </tr>
 </table>
 
-###### Table 107. Basics - Win - OIB - SC - Windows Update for Business - D - Delivery Optimisation - v3.0
+###### Table 113. Basics - Win - OIB - SC - Windows Update for Business - D - Delivery Optimisation - v3.0
 
 
 <table class='table-settings'>
@@ -9205,10 +9732,10 @@
 </tr>
 </table>
 
-###### Table 108. Settings - Win - OIB - SC - Windows Update for Business - D - Delivery Optimisation - v3.0
+###### Table 114. Settings - Win - OIB - SC - Windows Update for Business - D - Delivery Optimisation - v3.0
 
 
-<h3 id="section-57">Win - OIB - SC - Windows Update for Business - D - Reports and Telemetry - v3.0</h3>
+<h3 id="section-60">Win - OIB - SC - Windows Update for Business - D - Reports and Telemetry - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -9248,7 +9775,7 @@
 </tr>
 </table>
 
-###### Table 109. Basics - Win - OIB - SC - Windows Update for Business - D - Reports and Telemetry - v3.0
+###### Table 115. Basics - Win - OIB - SC - Windows Update for Business - D - Reports and Telemetry - v3.0
 
 
 <table class='table-settings'>
@@ -9284,10 +9811,10 @@
 </tr>
 </table>
 
-###### Table 110. Settings - Win - OIB - SC - Windows Update for Business - D - Reports and Telemetry - v3.0
+###### Table 116. Settings - Win - OIB - SC - Windows Update for Business - D - Reports and Telemetry - v3.0
 
 
-<h3 id="section-58">Win - OIB - SC - Windows User Experience - D - Feature Configuration - v3.1</h3>
+<h3 id="section-61">Win - OIB - SC - Windows User Experience - D - Automatic Restart Sign-On - v3.8</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -9299,7 +9826,78 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Name</td>
-<td class='property-column2'>Win - OIB - SC - Windows User Experience - D - Feature Configuration - v3.1</td>
+<td class='property-column2'>Win - OIB - SC - Windows User Experience - D - Automatic Restart Sign-On - v3.8</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Description</td>
+<td class='property-column2'></td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Profile type</td>
+<td class='property-column2'>Settings catalog</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Platform supported</td>
+<td class='property-column2'>Windows 10 and later</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Created</td>
+<td class='property-column2'>16 April 2026 12:15:29</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Last modified</td>
+<td class='property-column2'>16 April 2026 12:15:29</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Scope tags</td>
+<td class='property-column2'>Default</td>
+</tr>
+</table>
+
+###### Table 117. Basics - Win - OIB - SC - Windows User Experience - D - Automatic Restart Sign-On - v3.8
+
+
+<table class='table-settings'>
+<tr class='table-header1'>
+<td>Name</td>
+<td>Value</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>Administrative Templates</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level2'>Windows Logon Options</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Configure the mode of automatically signing in and locking last interactive user after a restart or cold boot</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Configure the mode of automatically signing in and locking last interactive user after a restart or cold boot (Device)</td>
+<td class='property-column2'>Enabled if BitLocker is on and not suspended</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Sign-in and lock last interactive user automatically after a restart</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+</table>
+
+###### Table 118. Settings - Win - OIB - SC - Windows User Experience - D - Automatic Restart Sign-On - v3.8
+
+
+<h3 id="section-62">Win - OIB - SC - Windows User Experience - D - Feature Configuration - v3.8</h3>
+
+<table class='table-settings'>
+<tr class='table-header1'>
+<td>Name</td>
+<td>Value</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>Basics</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Name</td>
+<td class='property-column2'>Win - OIB - SC - Windows User Experience - D - Feature Configuration - v3.8</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Description</td>
@@ -9319,7 +9917,7 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>29 August 2025 11:15:02</td>
+<td class='property-column2'>11 March 2026 16:44:36</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -9327,7 +9925,7 @@
 </tr>
 </table>
 
-###### Table 111. Basics - Win - OIB - SC - Windows User Experience - D - Feature Configuration - v3.1
+###### Table 119. Basics - Win - OIB - SC - Windows User Experience - D - Feature Configuration - v3.8
 
 
 <table class='table-settings'>
@@ -9352,6 +9950,10 @@
 <td class='property-column1'>Configure Chat Icon</td>
 <td class='property-column2'>Disabled</td>
 </tr>
+<tr class=''>
+<td class='property-column1'>Disable Share App Promotions</td>
+<td class='property-column2'>Promotional Apps on ShareSheet are Disabled.</td>
+</tr>
 <tr>
 <td colspan="2" class='category-level1'>Search</td>
 </tr>
@@ -9367,6 +9969,10 @@
 <td class='property-column1'>Disable Removable Drive Indexing</td>
 <td class='property-column2'>Enable.</td>
 </tr>
+<tr class=''>
+<td class='property-column1'>Do Not Use Web Results</td>
+<td class='property-column2'>Not allowed. Queries won't be performed on the web and web results won't be displayed when a user performs a query in Search.</td>
+</tr>
 <tr>
 <td colspan="2" class='category-level1'>Widgets</td>
 </tr>
@@ -9376,10 +9982,10 @@
 </tr>
 </table>
 
-###### Table 112. Settings - Win - OIB - SC - Windows User Experience - D - Feature Configuration - v3.1
+###### Table 120. Settings - Win - OIB - SC - Windows User Experience - D - Feature Configuration - v3.8
 
 
-<h3 id="section-59">Win - OIB - SC - Windows User Experience - D - Settings Sync - v3.7</h3>
+<h3 id="section-63">Win - OIB - SC - Windows User Experience - D - Settings Sync - v3.7</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -9419,7 +10025,7 @@
 </tr>
 </table>
 
-###### Table 113. Basics - Win - OIB - SC - Windows User Experience - D - Settings Sync - v3.7
+###### Table 121. Basics - Win - OIB - SC - Windows User Experience - D - Settings Sync - v3.7
 
 
 <table class='table-settings'>
@@ -9445,16 +10051,19 @@
 <td class='property-column1'>Enable Windows Backup</td>
 <td class='property-column2'>Enabled</td>
 </tr>
+<tr>
+<td colspan="2" class='category-level1'>Windows Backup And Restore</td>
+</tr>
 <tr class=''>
-<td class='property-column1'>Enable Windows Restore (Windows Insiders only)</td>
+<td class='property-column1'>Enable Windows Restore</td>
 <td class='property-column2'>Windows Restore Enabled</td>
 </tr>
 </table>
 
-###### Table 114. Settings - Win - OIB - SC - Windows User Experience - D - Settings Sync - v3.7
+###### Table 122. Settings - Win - OIB - SC - Windows User Experience - D - Settings Sync - v3.7
 
 
-<h3 id="section-60">Win - OIB - SC - Windows User Experience - U - Copilot - v3.6</h3>
+<h3 id="section-64">Win - OIB - SC - Windows User Experience - U - Copilot - v3.8</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -9466,7 +10075,7 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Name</td>
-<td class='property-column2'>Win - OIB - SC - Windows User Experience - U - Copilot - v3.6</td>
+<td class='property-column2'>Win - OIB - SC - Windows User Experience - U - Copilot - v3.8</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Description</td>
@@ -9486,7 +10095,7 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>18 April 2025 12:09:03</td>
+<td class='property-column2'>16 April 2026 11:01:21</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -9494,7 +10103,7 @@
 </tr>
 </table>
 
-###### Table 115. Basics - Win - OIB - SC - Windows User Experience - U - Copilot - v3.6
+###### Table 123. Basics - Win - OIB - SC - Windows User Experience - U - Copilot - v3.8
 
 
 <table class='table-settings'>
@@ -9506,12 +10115,16 @@
 <td colspan="2" class='category-level1'>Windows AI</td>
 </tr>
 <tr class=''>
+<td class='property-column1'>Remove Microsoft Copilot App (User)</td>
+<td class='property-column2'>Removal Enabled.</td>
+</tr>
+<tr class=''>
 <td class='property-column1'>Turn Off Copilot in Windows (User)</td>
 <td class='property-column2'>Disable Copilot</td>
 </tr>
 </table>
 
-###### Table 116. Settings - Win - OIB - SC - Windows User Experience - U - Copilot - v3.6
+###### Table 124. Settings - Win - OIB - SC - Windows User Experience - U - Copilot - v3.8
 
 
 

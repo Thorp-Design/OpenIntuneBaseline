@@ -6,7 +6,7 @@
   "createdDateTime@odata.type": "#DateTimeOffset",
   "createdDateTime": "2025-08-26T17:06:02.6281794Z",
   "creationSource": null,
-  "description": "",
+  "description": "OIBID:05B9A828-DB19-4769-B112-62EA1F5367D6",
   "lastModifiedDateTime@odata.type": "#DateTimeOffset",
   "lastModifiedDateTime": "2025-09-26T13:43:05.91516Z",
   "name": "Win - OIB - ES - Local Group Membership - D - Local Administrators - v3.7",

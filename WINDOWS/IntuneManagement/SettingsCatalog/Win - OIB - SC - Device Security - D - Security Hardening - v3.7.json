@@ -6,7 +6,7 @@
   "createdDateTime@odata.type": "#DateTimeOffset",
   "createdDateTime": "2024-10-20T19:56:16.4175283Z",
   "creationSource": null,
-  "description": "",
+  "description": "OIBID:372C2120-9D79-46C3-A798-BA92C5C80707",
   "lastModifiedDateTime@odata.type": "#DateTimeOffset",
   "lastModifiedDateTime": "2025-10-14T13:35:59.9991636Z",
   "name": "Win - OIB - SC - Device Security - D - Security Hardening - v3.7",

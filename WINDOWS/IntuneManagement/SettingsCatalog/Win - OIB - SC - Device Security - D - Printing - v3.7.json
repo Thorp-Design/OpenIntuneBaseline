@@ -6,7 +6,7 @@
   "createdDateTime@odata.type": "#DateTimeOffset",
   "createdDateTime": "2025-10-08T09:51:00.0899701Z",
   "creationSource": null,
-  "description": "",
+  "description": "OIBID:1968C406-B707-4382-AC9E-2FC4EE084EB4",
   "lastModifiedDateTime@odata.type": "#DateTimeOffset",
   "lastModifiedDateTime": "2025-10-10T10:01:25.7054182Z",
   "name": "Win - OIB - SC - Device Security - D - Printing - v3.7",

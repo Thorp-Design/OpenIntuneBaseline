@@ -6,7 +6,7 @@
   "createdDateTime@odata.type": "#DateTimeOffset",
   "createdDateTime": "2025-10-20T09:23:55.5235306Z",
   "creationSource": null,
-  "description": "NOTE: This policy will only apply to devices running Windows Enterprise",
+  "description": "NOTE: This policy will only apply to devices running Windows Enterprise\nOIBID:0EE888FD-C68F-478A-A0F1-F8147967E9DB",
   "lastModifiedDateTime@odata.type": "#DateTimeOffset",
   "lastModifiedDateTime": "2025-10-20T09:36:31.1636254Z",
   "name": "Win - OIB - SC - Windows Apps - D - In-Box App Removal - v3.7",

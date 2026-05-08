@@ -1,0 +1,20 @@
+name: Validate OIB Manifest
+
+on:
+  pull_request:
+    paths:
+      - '**/IntuneManagement/**/*.json'
+      - '**/PolicyManifest.json'
+      - 'Scripts/Update-OIBManifest.ps1'
+
+jobs:
+  validate:
+    name: Validate OIBIDs and Manifests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate OIB Manifest
+        shell: pwsh
+        run: ./Scripts/Update-OIBManifest.ps1 -Mode Validate -Platform All
