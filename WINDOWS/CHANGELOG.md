@@ -1,5 +1,106 @@
 # OIB Windows Change Log
 
+# Windows v3.8 - 2026-04-16 - IR40 Edition 🎂
+> [!IMPORTANT]
+> As part of ongoing and future improvements, I am adding a per-policy tracking GUID (OIBID) to the `description` field of every policy, even ones that otherwise haven't changed this version. 
+> My intention is to use this in my OIBDeployer (and potentially other tools) to provide richer information, as well as being able to reliably identify existing policies without depending on the policy name.
+>
+> The GUID is appended to the description in the format `OIBID:<UUID>` and is tracked in a new `WINDOWS/PolicyManifest.json` file in this repository. **Please do not remove or edit this token**, as doing so will break version tracking for that policy.
+>
+> For those of you who already have the OIB deployed, there is no hard requirement for you to suddenly re-deploy the entire thing in your tenant. There are ways to do so if you're interested: IntuneManagement has an "Update" option on imports which is a Preview feature, a script that does a PATCH on existing policies matched from the PolicyManifest file, or even just upating the Description field manually!.
+>
+> I'm always very concious of large/breaking changes, but I do think this change will be worth if for the improved tracking and management capabilities it will provide in the long run, and I hope you agree!
+
+## Added 🆕
+### Settings Catalog
+🆕**Win - OIB - SC - Network Security - D - Disable NTLM - v3.8**
+* Added 3 settings to disable NTLM authentication and traffic across the board, following the [Microsoft guidance on Disabling NTLM](https://learn.microsoft.com/en-us/windows-server/security/windows-authentication/ntlm/ntlm-deployment-guide?WT.mc_id=Portal-fx#disable-ntlm-authentication-and-traffic):
+    * Network Security LAN Manager Authentication Level - `Send NTLMv2 responses only. Refuse LM and NTLM`
+    * Network Security Restrict NTLM Incoming NTLM Traffic - `Deny all accounts`
+    * Network Security Restrict NTLM Outgoing NTLM Traffic To Remote Servers - `Deny all accounts`
+
+As of June 2024, NTLM has been marked as deprecated, NTLMv1 has been removed from Windows 11 24H2+, and will soon be disabled by default: [Advancing Windows security: Disabling NTLM by default](https://techcommunity.microsoft.com/blog/windows-itpro-blog/advancing-windows-security-disabling-ntlm-by-default/4489526).
+
+> [!IMPORTANT]
+> Disabling NTLM can have a significant impact on your environment if you have legacy applications or services that rely on it, so make sure to do the necessary testing and communication before deploying this.
+> If you are unsure, you should [check NTLM audit logs](https://support.microsoft.com/en-gb/topic/overview-of-ntlm-auditing-enhancements-in-windows-11-version-24h2-and-windows-server-2025-b7ead732-6fc5-46a3-a943-27a4571d9e7b) or utilise MDE Advanced Hunting to [detect NTLM usage in your environment](https://www.kqlsearch.com/query/Windows%20-%20Detect%20Ntlm%20Usage%20In%20The%20Environment&cmljgmjja0001y6f58a21rkcf).
+
+🆕**Win - OIB - SC - Windows User Experience - D - Automatic Restart Sign-On - v3.8**
+* The following settings have been moved out of the Login and Lock Screen policy and into their own policy to make them easier to find and manage:
+    * Sign-in and lock last interactive user automatically after a restart - `Enabled`
+    * Configure the mode of automatically signing in and locking last interactive user after a restart or cold boot - `Enabled`
+        * Configure the mode of automatically signing in and locking last interactive user after a restart or cold boot - `Enabled if BitLocker is on and not suspended`
+
+[Automatic Restart Sign-On (ARSO)](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/component-updates/winlogon-automatic-restart-sign-on--arso-) is a great user experience feature that allows users to be automatically signed back in after a restart or cold boot, which is particularly useful for devices that are configured to auto-update outside of active hours. I have attempted to balance the user experience benefits of this feature with the security implications by ensuring this only happens if BitLocker is on and not suspended, though use your own judgement in your environment.
+
+The primary reason for moving these settings out is that ARSO has to be explicitly disabled if you want to implement [Personal Data Encryption (PDE)](https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/personal-data-encryption/#prerequisites). Splitting these policies makes decision-making on security choices easier and more managable. Resolves [[#141](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/issues/141)]
+
+### Endpoint Security
+🆕**Win - OIB - ES - Windows Firewall - D - Security Rules - v3.8**
+* Added 3 rules to block outbound connections for three low-risk applications regularly used as LOLBINs (Living Off The Land Binaries) by attackers:
+    * mshta.exe
+    * notepad.exe
+    * calc.exe
+
+Each rule is configured as follows and has rules for both 32-bit and 64-bit binaries:
+
+    * Direction - The rule applies to outbound traffic.
+    * Action - Block
+    * Enabled - True
+    * Interface Types - All
+    * File Path - %systemroot%\{bitness}\{app}.exe
+    * Network Types - FW_PROFILE_TYPE_ALL: This value represents all these network sets and any future network sets.
+    
+This addition was driven by a new Defender Secure Score recommendation ([MC1266905](https://mc.merill.net/message/MC1266905)) specifically for mshta.exe, with calc and notepad being suggestions by MVP Jay Kerai ([@jkerai1](https://github.com/jkerai1))
+
+
+## Changed/Updated 🔄️
+### Settings Catalog
+🔄️**Win - OIB - SC - Defender Antivirus - D - Additional Configuration**
+* Removed "Intel TDT Enabled" as the setting has been deprecated and is no longer configurable ([PMPC Blog - Intel TDT Deprecated](https://patchmypc.com/blog/intel-tdt-deprecated-defender-csp-error-0x86000002/)). Resolves [[#182](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/issues/182)]
+
+🔄️**Win - OIB - SC - Device Security - D - Login and Lock Screen**
+* Changed "Do not display the password reveal button" from `Enabled` to `Disabled` following the updated NIST & CIS guidance rationale provided by [@JackStuart](https://github.com/JackStuart). Resolves [[#146](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/issues/146)]
+* Removed settings related to ARSO (Automatic Restart Sign-On) as these have been moved to their own profile.
+
+🔄️**Win - OIB - SC - Microsoft Edge - D - Security**
+* Added "Enable Network Prediction" set to `Enabled` and `Don't predict network actions on any network connection`. Resolves [[#163](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/issues/163)] and matches CIS Edge Benchmark setting.
+* Added "Enable Microsoft Defender SmartScreen DNS requests" set to `Enabled` to ensure SmartScreen works as expected..
+* Changed "Configure users ability to override feature flags" from `Disabled` to `Enabled` as there's a sub-setting that then exists to _actually_ `Prevent users from overriding feature flags`. Thanks Microsoft.
+* Removed "InsecurePrivateNetworkRequestsAllowed" as the [setting is obsolete](https://learn.microsoft.com/en-us/DeployEdge/microsoft-edge-browser-policies/insecureprivatenetworkrequestsallowed). Resolves [[#170](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/issues/170)]
+* Removed "Enable renderer code integrity" as the setting is deprecated.
+
+🔄️**Win - OIB - SC - Microsoft Edge - U - User Experience**
+* Added "Default notification setting (User)" to `Enabled` and `Don't allow any site to show desktop notifications`. Resolves [[#198](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/issues/198)]
+* Added "Allow notifications on specific sites" set to `Enabled` with `*.microsoft.com` and `*.cloud.microsoft` configured.
+> [!IMPORTANT]
+> The above notification settings suggestion came from the WinAdmins Discord as a mitigation against potential malicious or otherwise annoying notification spam but leaving M365 Services capable. Edge is supposed to do this somewhat [automatically](https://blogs.windows.com/msedgedev/2023/07/06/fighting-notification-spam-microsoft-edge/), but this tightens up control significantly. You may have legitimate use-cases for allowing notifications from other sites within your organisation, so make sure to test and adjust as necessary!
+* Added "Block access to a list of URLs" set to `Enabled` with various `apps.microsoft.com` URLs as an attempt to prevent users potentially bypassing other Store block policies and downloading them from the website directly.
+> [!NOTE]
+> This is a super crude way of doing this and does NOT completely stop other ways of users potentially obtaining and installing Store apps. The only true control here is Application Control. 
+* Added "Control whether an informational webpage for Edge for Business is shown in the new tab after major browser updates" set to `Disabled` because this isn't really necessary for enterprise users and just creates more noise.
+* Removed "Enable Gamer Mode" as the [setting is obsolete](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-browser-policies/gamermodeenabled). Resolves [[#170](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/issues/170)]
+
+🔄️**Win - OIB - SC - Microsoft OneDrive - U - Configuration**
+* Added "Start OneDrive automatically when signing in to Windows" set to `Enabled`, overriding the user's ability to turn it off, accidentally or otherwise. Resolves [[#168](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/issues/168)]
+
+🔄️**Win - OIB - SC - Microsoft Store - D - Configuration**
+* Changed "Allow All Trusted Apps" from 'Explicit Deny' to 'Explicit Allow Unlock' which was blocking both the EPM agent and OneDrive from installing L1 right-click menu items. Resolves [[#186](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/issues/186)] and [[#50](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/issues/50)]
+
+🔄️**Win - OIB - SC - Windows User Experience - U - Copilot**
+* Added "Remove Microsoft Copilot App" set to `Removal Enabled` to trigger removal of the _Consumer_ Copilot app. 
+> [!NOTE] 
+> As documented, this will only occur if the following conditions are met: 
+> * Microsoft 365 Copilot and Microsoft Copilot are both installed
+> * The Microsoft Copilot app wasn't installed by the user
+> * The Microsoft Copilot app wasn't launched in the last 14 days
+
+🔄️**Win - OIB - SC - Windows User Experience - D - Feature Configuration**
+* Added "Disable Share App Promotions" set to `Promotional Apps on ShareSheet are Disabled.` to stop promotional options being visible in the right-click Share menu.
+* Added "Do Not Use Web Results" set to `Not allowed. Queries won't be performed on the web and web results won't be displayed when a user performs a query in Search.` to clean up the Start Menu search results.
+
+---
+
 # Windows v3.7 - 2025-10-15 - 25H2 Edition
 ## Added 🆕
 ### Settings Catalog
