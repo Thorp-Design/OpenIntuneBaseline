@@ -4,7 +4,7 @@
     "creationSource": null,
     "description": "",
     "lastModifiedDateTime": "2026-01-05T11:17:36.4013396Z",
-    "name": "MacOS - OIB - SC - Microsoft Office - D - Office Configuration - v2.0.1",
+    "name": "MacOS - OIB - SC - Microsoft Office - D - Office Configuration - v2.0.2",
     "platforms": "macOS",
     "priorityMetaData": null,
     "roleScopeTagIds": [
@@ -211,7 +211,7 @@
                 "auditRuleInformation": null,
                 "choiceSettingValue": {
                     "settingValueTemplateReference": null,
-                    "value": "com.apple.managedclient.preferences_enablenewoutlook_3",
+                    "value": "com.apple.managedclient.preferences_enablenewoutlook_2",
                     "children": []
                 }
             }
