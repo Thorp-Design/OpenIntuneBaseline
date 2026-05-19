@@ -4,7 +4,7 @@
     "creationSource": null,
     "description": "",
     "lastModifiedDateTime": "2025-12-25T15:03:46.7709243Z",
-    "name": "MacOS - OIB - SC - Authentication - D - Platform SSO - v2.0",
+    "name": "MacOS - OIB - SC - Authentication - D - Platform SSO - v2.0.1",
     "platforms": "macOS",
     "priorityMetaData": null,
     "roleScopeTagIds": [
@@ -71,6 +71,17 @@
                                                     "settingValueTemplateReference": null,
                                                     "value": "com.apple.extensiblesso_platformsso_authenticationmethod_1",
                                                     "children": []
+                                                }
+                                            },
+                                            {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                "settingDefinitionId": "com.apple.extensiblesso_platformsso_loginfrequency",
+                                                "settingInstanceTemplateReference": null,
+                                                "auditRuleInformation": null,
+                                                "simpleSettingValue": {
+                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                                    "settingValueTemplateReference": null,
+                                                    "value": 28800
                                                 }
                                             },
                                             {
