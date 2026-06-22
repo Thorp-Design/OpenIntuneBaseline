@@ -4,7 +4,7 @@
     "creationSource": null,
     "description": "",
     "lastModifiedDateTime": "2025-12-25T15:03:46.7709243Z",
-    "name": "MacOS - OIB - SC - Authentication - D - Platform SSO - v2.0.1",
+    "name": "MacOS - OIB - SC - Authentication - D - Platform SSO - v2.0.2",
     "platforms": "macOS",
     "priorityMetaData": null,
     "roleScopeTagIds": [
@@ -81,7 +81,7 @@
                                                 "simpleSettingValue": {
                                                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
                                                     "settingValueTemplateReference": null,
-                                                    "value": 28800
+                                                    "value": 604800
                                                 }
                                             },
                                             {
