@@ -24,10 +24,14 @@
   "prereleaseFeatures@odata.type": "#microsoft.graph.prereleaseFeatures",
   "prereleaseFeatures": "userDefined",
   "automaticUpdateMode@odata.type": "#microsoft.graph.automaticUpdateMode",
-  "automaticUpdateMode": "windowsDefault",
+  "automaticUpdateMode": "autoInstallAndRebootAtScheduledTime",
   "microsoftUpdateServiceAllowed": true,
   "driversExcluded": false,
-  "installationSchedule": null,
+  "installationSchedule": {
+    "@odata.type": "#microsoft.graph.windowsUpdateScheduledInstall",
+    "scheduledInstallDay": "wednesday",
+    "scheduledInstallTime": "22:00:00.0000000"
+  },
   "qualityUpdatesDeferralPeriodInDays": 10,
   "featureUpdatesDeferralPeriodInDays": 0,
   "qualityUpdatesPaused": false,
