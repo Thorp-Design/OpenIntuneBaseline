@@ -9,7 +9,7 @@
   "description": "OIBID:44731D7C-3531-4DFF-9099-C5E06CF325CD",
   "lastModifiedDateTime@odata.type": "#DateTimeOffset",
   "lastModifiedDateTime": "2025-01-22T12:11:38.7973181Z",
-  "name": "Win - OIB - SC - Device Security - D - Timezone - v3.4",
+  "name": "Win - OIB - SC - Device Security - D - Timezone - v3.4.1",
   "platforms@odata.type": "#microsoft.graph.deviceManagementConfigurationPlatforms",
   "platforms": "windows10",
   "priorityMetaData": null,
