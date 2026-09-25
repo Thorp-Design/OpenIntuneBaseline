@@ -4,7 +4,7 @@
     "creationSource": null,
     "description": "",
     "lastModifiedDateTime": "2026-01-28T12:13:21.7071589Z",
-    "name": "MacOS - OIB - SC - Device Security - D - Screensaver - v2.0",
+    "name": "MacOS - OIB - SC - Device Security - D - Screensaver - v2.0.1",
     "platforms": "macOS",
     "priorityMetaData": null,
     "roleScopeTagIds": [
@@ -50,7 +50,7 @@
                                 "simpleSettingValue": {
                                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
                                     "settingValueTemplateReference": null,
-                                    "value": 60
+                                    "value": 0
                                 }
                             },
                             {

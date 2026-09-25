@@ -9,7 +9,7 @@
   "description": "",
   "lastModifiedDateTime@odata.type": "#DateTimeOffset",
   "lastModifiedDateTime": "2026-01-28T12:13:21.7071589Z",
-  "name": "MacOS - OIB - SC - Device Security - D - Screensaver - v2.0",
+  "name": "MacOS - OIB - SC - Device Security - D - Screensaver - v2.0.1",
   "platforms@odata.type": "#microsoft.graph.deviceManagementConfigurationPlatforms",
   "platforms": "macOS",
   "priorityMetaData": null,
@@ -75,7 +75,7 @@
                 "simpleSettingValue": {
                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
                   "settingValueTemplateReference": null,
-                  "value": 60
+                  "value": 0
                 }
               },
               {
