@@ -4,7 +4,7 @@
     "creationSource": null,
     "description": "",
     "lastModifiedDateTime": "2025-12-25T15:04:42.598531Z",
-    "name": "MacOS - OIB - SC - Microsoft Edge - D - Security - v2.0.1",
+    "name": "MacOS - OIB - SC - Microsoft Edge - D - Security - v2.0.2",
     "platforms": "macOS",
     "priorityMetaData": null,
     "roleScopeTagIds": [
@@ -374,12 +374,12 @@
             "id": "25",
             "settingInstance": {
                 "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                "settingDefinitionId": "com.apple.managedclient.preferences_proactiveauthenabled",
+                "settingDefinitionId": "com.apple.managedclient.preferences_proactiveauthworkflowenabled",
                 "settingInstanceTemplateReference": null,
                 "auditRuleInformation": null,
                 "choiceSettingValue": {
                     "settingValueTemplateReference": null,
-                    "value": "com.apple.managedclient.preferences_proactiveauthenabled_false",
+                    "value": "com.apple.managedclient.preferences_proactiveauthworkflowenabled_false",
                     "children": []
                 }
             }
@@ -408,20 +408,6 @@
                 "choiceSettingValue": {
                     "settingValueTemplateReference": null,
                     "value": "com.apple.managedclient.preferences_microsoftedgeinsiderpromotionenabled_false",
-                    "children": []
-                }
-            }
-        },
-        {
-            "id": "28",
-            "settingInstance": {
-                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                "settingDefinitionId": "com.apple.managedclient.preferences_sslversionmin",
-                "settingInstanceTemplateReference": null,
-                "auditRuleInformation": null,
-                "choiceSettingValue": {
-                    "settingValueTemplateReference": null,
-                    "value": "com.apple.managedclient.preferences_sslversionmin_2",
                     "children": []
                 }
             }
