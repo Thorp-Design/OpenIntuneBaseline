@@ -17,120 +17,144 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          persist-credentials: false
 
       - name: Fetch upstream
         run: |
           git remote add upstream https://github.com/SkipToTheEndpoint/OpenIntuneBaseline.git || true
-          git fetch upstream main
+          # All branches and tags: release work happens on windows-v*/macos-v*
+          # branches long before it reaches upstream main.
+          git fetch --tags upstream '+refs/heads/*:refs/remotes/upstream/*'
 
       - name: Check for differences
         id: diff
         run: |
-          BEHIND=$(git rev-list HEAD..upstream/main --count)
-          UPSTREAM_SHA=$(git rev-parse --short upstream/main)
-          CURRENT_SHA=$(git rev-parse --short HEAD)
+          # Compare content, not commit counts. Upstream merges its release
+          # branches into main with merge commits whose tree we already have,
+          # which a plain rev-list count reports as "behind" forever. The
+          # three-dot diff is what upstream changed since our merge base, so
+          # our own customisations never show up as upstream changes.
+          git diff --name-only HEAD...upstream/main > /tmp/changed_files.txt
+          git diff --name-only HEAD...upstream/main -- '*.json' > /tmp/changed_policies.txt
+          git log --oneline --no-merges HEAD..upstream/main > /tmp/commits.txt
 
-          echo "behind=$BEHIND" >> $GITHUB_OUTPUT
-          echo "upstream_sha=$UPSTREAM_SHA" >> $GITHUB_OUTPUT
-          echo "current_sha=$CURRENT_SHA" >> $GITHUB_OUTPUT
-          echo "has_updates=$([[ $BEHIND -gt 0 ]] && echo true || echo false)" >> $GITHUB_OUTPUT
+          # Release tags and in-progress release branches whose content we do
+          # not have. Upstream tags its own merge commits, which are never in
+          # our history even once we have merged the same tree, so "not an
+          # ancestor" alone is not enough; require a non-empty three-dot diff.
+          : > /tmp/tags.txt
+          for t in $(git tag --list 'windows-v*' 'macos-v*' --no-merged HEAD --sort=-creatordate); do
+            files=$(git diff --name-only "HEAD...$t" | wc -l)
+            if [ "$files" -gt 0 ]; then echo "$t: $files file(s) changed vs fork" >> /tmp/tags.txt; fi
+          done
+          : > /tmp/branches.txt
+          for b in $(git branch -r --list 'upstream/windows-v*' 'upstream/macos-v*' --no-merged HEAD --format='%(refname:short)'); do
+            files=$(git diff --name-only "HEAD...$b" | wc -l)
+            if [ "$files" -gt 0 ]; then echo "$b: last commit $(git log -1 --format='%ad %h %s' --date=short "$b"); $files file(s) changed vs fork" >> /tmp/branches.txt; fi
+          done
 
-          # Save details for issue
-          if [ "$BEHIND" -gt 0 ]; then
-            git diff --name-only HEAD upstream/main -- '*.json' > /tmp/changed_policies.txt
-            git log --oneline HEAD..upstream/main > /tmp/commits.txt
+          changed=$(wc -l < /tmp/changed_files.txt)
+          tags=$(wc -l < /tmp/tags.txt)
+          branches=$(wc -l < /tmp/branches.txt)
+          {
+            echo "changed=$changed"
+            echo "tags=$tags"
+            echo "branches=$branches"
+            echo "upstream_sha=$(git rev-parse --short upstream/main)"
+            echo "current_sha=$(git rev-parse --short HEAD)"
+            if [ "$changed" -gt 0 ] || [ "$tags" -gt 0 ] || [ "$branches" -gt 0 ]; then
+              echo "has_updates=true"
+            else
+              echo "has_updates=false"
+            fi
+          } >> "$GITHUB_OUTPUT"
 
-            # Get changelogs
-            git show upstream/main:WINDOWS/CHANGELOG.md 2>/dev/null | head -100 > /tmp/win_changelog.md || echo "No changelog" > /tmp/win_changelog.md
-            git show upstream/main:MACOS/CHANGELOG.md 2>/dev/null | head -50 > /tmp/mac_changelog.md || echo "No changelog" > /tmp/mac_changelog.md
-          fi
+          git show upstream/main:WINDOWS/CHANGELOG.md 2>/dev/null | head -100 > /tmp/win_changelog.md || echo "No changelog" > /tmp/win_changelog.md
+          git show upstream/main:MACOS/CHANGELOG.md 2>/dev/null | head -50 > /tmp/mac_changelog.md || echo "No changelog" > /tmp/mac_changelog.md
 
       - name: Create or update issue
         if: steps.diff.outputs.has_updates == 'true'
         uses: actions/github-script@v7
+        env:
+          CHANGED: ${{ steps.diff.outputs.changed }}
+          UPSTREAM_SHA: ${{ steps.diff.outputs.upstream_sha }}
+          CURRENT_SHA: ${{ steps.diff.outputs.current_sha }}
         with:
           script: |
             const fs = require('fs');
+            const read = (p) => { try { return fs.readFileSync(p, 'utf8').trim(); } catch (e) { return ''; } };
 
-            let changedPolicies = '', commits = '', winChangelog = '', macChangelog = '';
-            try {
-              changedPolicies = fs.readFileSync('/tmp/changed_policies.txt', 'utf8');
-              commits = fs.readFileSync('/tmp/commits.txt', 'utf8');
-              winChangelog = fs.readFileSync('/tmp/win_changelog.md', 'utf8');
-              macChangelog = fs.readFileSync('/tmp/mac_changelog.md', 'utf8');
-            } catch (e) {}
+            const changedPolicies = read('/tmp/changed_policies.txt');
+            const commits = read('/tmp/commits.txt');
+            const tags = read('/tmp/tags.txt');
+            const branches = read('/tmp/branches.txt');
+            const winChangelog = read('/tmp/win_changelog.md');
+            const macChangelog = read('/tmp/mac_changelog.md');
+            const block = (s) => s ? '```\n' + s + '\n```' : '_None._';
 
-            const body = `# Upstream OIB Updates Available
+            const body = [
+              '# Upstream OIB Updates Available',
+              '',
+              `Upstream main has changed **${process.env.CHANGED}** file(s) since our last merge.`,
+              '',
+              '| | Commit |',
+              '|---|--------|',
+              `| **Fork main** | \`${process.env.CURRENT_SHA}\` |`,
+              `| **Upstream main** | \`${process.env.UPSTREAM_SHA}\` |`,
+              '',
+              '## Unmerged release tags',
+              block(tags),
+              '',
+              '## Upstream release branches in progress',
+              'Not merged into upstream main yet. Review these ahead of the release.',
+              block(branches),
+              '',
+              '## New upstream commits on main',
+              block(commits),
+              '',
+              '## Policy files upstream changed',
+              'Upstream changes only (three-dot diff); our own customisations are not listed.',
+              block(changedPolicies),
+              '',
+              '## Windows Changelog',
+              '',
+              winChangelog.split('\n').slice(0, 50).join('\n'),
+              '',
+              '## macOS Changelog',
+              '',
+              macChangelog.split('\n').slice(0, 30).join('\n'),
+              '',
+              '## To Sync',
+              '',
+              '**Do not use the GitHub "Sync fork" button, and do not merge straight into main.** Every push to main triggers a live deploy to the tenant.',
+              '',
+              '1. Merge upstream on a branch, in a separate worktree.',
+              '2. Check renamed policies against the blocklist and live names, so nothing gets wrongly blocked or created twice.',
+              '3. Dry-run `deploy.py` locally against the branch.',
+              '4. Push to main and watch the deploy-oib run.',
+              '5. Update the intune-policies submodule pointer.',
+              '',
+              '---',
+              '*Auto-generated weekly*',
+            ].join('\n');
 
-            This fork is **${{ steps.diff.outputs.behind }}** commits behind upstream.
-
-            | | Commit |
-            |---|--------|
-            | **Current** | \`${{ steps.diff.outputs.current_sha }}\` |
-            | **Upstream** | \`${{ steps.diff.outputs.upstream_sha }}\` |
-
-            ## New Commits
-
-            \`\`\`
-            ${commits}
-            \`\`\`
-
-            ## Changed Policies
-
-            \`\`\`
-            ${changedPolicies}
-            \`\`\`
-
-            ## Windows Changelog
-
-            ${winChangelog.split('\n').slice(0, 50).join('\n')}
-
-            ## macOS Changelog
-
-            ${macChangelog.split('\n').slice(0, 30).join('\n')}
-
-            ## To Sync
-
-            **Option 1: GitHub UI**
-            - Click "Sync fork" button on the repo page
-
-            **Option 2: Command line**
-            \`\`\`bash
-            git fetch upstream main
-            git merge upstream/main
-            git push origin main
-            \`\`\`
-
-            **Then update intune-policies submodule:**
-            \`\`\`bash
-            cd path/to/intune-policies
-            cd OIB && git pull origin main && cd ..
-            git add OIB
-            git commit -m "Update OIB submodule"
-            git push
-            \`\`\`
-
-            ---
-            *Auto-generated weekly*
-            `;
-
-            const issues = await github.rest.issues.listForRepo({
+            const issues = await github.paginate(github.rest.issues.listForRepo, {
               owner: context.repo.owner,
               repo: context.repo.repo,
               state: 'open',
               labels: 'upstream-sync'
             });
 
-            const existingIssue = issues.data.find(i => i.title.includes('Upstream OIB Updates'));
+            const existing = issues.filter(i => i.title.includes('Upstream OIB Updates'));
 
-            if (existingIssue) {
+            if (existing.length > 0) {
               await github.rest.issues.update({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                issue_number: existingIssue.number,
+                issue_number: existing[0].number,
                 body: body
               });
-              console.log(`Updated issue #${existingIssue.number}`);
+              console.log(`Updated issue #${existing[0].number}`);
             } else {
               await github.rest.issues.create({
                 owner: context.repo.owner,
@@ -147,14 +171,14 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            const issues = await github.rest.issues.listForRepo({
+            const issues = await github.paginate(github.rest.issues.listForRepo, {
               owner: context.repo.owner,
               repo: context.repo.repo,
               state: 'open',
               labels: 'upstream-sync'
             });
 
-            for (const issue of issues.data) {
+            for (const issue of issues) {
               if (issue.title.includes('Upstream OIB Updates')) {
                 await github.rest.issues.update({
                   owner: context.repo.owner,
