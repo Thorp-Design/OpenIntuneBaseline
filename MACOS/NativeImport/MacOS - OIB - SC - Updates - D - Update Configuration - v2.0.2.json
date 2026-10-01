@@ -4,7 +4,7 @@
     "creationSource": null,
     "description": "",
     "lastModifiedDateTime": "2025-12-25T15:08:45.3477288Z",
-    "name": "MacOS - OIB - SC - Updates - D - Update Configuration - v2.0.1",
+    "name": "MacOS - OIB - SC - Updates - D - Update Configuration - v2.0.2",
     "platforms": "macOS",
     "priorityMetaData": null,
     "roleScopeTagIds": [
@@ -140,6 +140,17 @@
                                                 "choiceSettingValue": {
                                                     "settingValueTemplateReference": null,
                                                     "value": "softwareupdate_rapidsecurityresponse_enable_true",
+                                                    "children": []
+                                                }
+                                            },
+                                            {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                "settingDefinitionId": "softwareupdate_rapidsecurityresponse_enablerollback",
+                                                "settingInstanceTemplateReference": null,
+                                                "auditRuleInformation": null,
+                                                "choiceSettingValue": {
+                                                    "settingValueTemplateReference": null,
+                                                    "value": "softwareupdate_rapidsecurityresponse_enablerollback_false",
                                                     "children": []
                                                 }
                                             }
