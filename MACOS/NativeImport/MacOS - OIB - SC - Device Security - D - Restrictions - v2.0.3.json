@@ -4,7 +4,7 @@
     "creationSource": null,
     "description": "",
     "lastModifiedDateTime": "2025-12-25T15:11:11.0843023Z",
-    "name": "MacOS - OIB - SC - Device Security - D - Restrictions - v2.0.2",
+    "name": "MacOS - OIB - SC - Device Security - D - Restrictions - v2.0.3",
     "platforms": "macOS",
     "priorityMetaData": null,
     "roleScopeTagIds": [
@@ -164,7 +164,7 @@
                                 "auditRuleInformation": null,
                                 "choiceSettingValue": {
                                     "settingValueTemplateReference": null,
-                                    "value": "com.apple.applicationaccess_allowbluetoothsharingmodification_true",
+                                    "value": "com.apple.applicationaccess_allowbluetoothsharingmodification_false",
                                     "children": []
                                 }
                             },
@@ -373,7 +373,7 @@
                                 "auditRuleInformation": null,
                                 "choiceSettingValue": {
                                     "settingValueTemplateReference": null,
-                                    "value": "com.apple.applicationaccess_allowerasecontentandsettings_true",
+                                    "value": "com.apple.applicationaccess_allowerasecontentandsettings_false",
                                     "children": []
                                 }
                             },
@@ -582,7 +582,7 @@
                                 "auditRuleInformation": null,
                                 "choiceSettingValue": {
                                     "settingValueTemplateReference": null,
-                                    "value": "com.apple.applicationaccess_allowprintersharingmodification_true",
+                                    "value": "com.apple.applicationaccess_allowprintersharingmodification_false",
                                     "children": []
                                 }
                             },

@@ -2,9 +2,9 @@
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies/$entity",
     "createdDateTime": "2025-12-25T14:37:21.0942337Z",
     "creationSource": null,
-    "description": "",
+    "description": "Assigned to All Devices by hand (macOS filter): the name has no D/U token, so deploy.py never assigns it. Keep this stem; a rename creates a second policy. Lockout reset 15 min (0 meant the 10-attempt lockout never locked). Minimum length 6 is flagged for review.",
     "lastModifiedDateTime": "2025-12-25T15:04:20.2405211Z",
-    "name": "MacOS - OIB - SC - Device Security - Passcode - v2.0",
+    "name": "MacOS - OIB - SC - Device Security - Passcode - v2.0.1",
     "platforms": "macOS",
     "priorityMetaData": null,
     "roleScopeTagIds": [
@@ -61,7 +61,7 @@
                                 "simpleSettingValue": {
                                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
                                     "settingValueTemplateReference": null,
-                                    "value": 0
+                                    "value": 15
                                 }
                             },
                             {
