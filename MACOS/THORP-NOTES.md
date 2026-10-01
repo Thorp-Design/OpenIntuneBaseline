@@ -7,7 +7,8 @@ This file is specific to the Thorp Design fork. It is kept separate from `README
 * Policy GUIDs (OIBIDs) live only in `MACOS/PolicyManifest.json`. Upstream also writes the OIBID into each policy's `description` field. We do not. Changing a description changes the policy, which forces a version bump and a redeploy of every macOS policy across the fleet, and we decided that was not worth it.
 * Each manifest entry's `name` is the policy file name without `.json`. A policy's identity is that name with the trailing ` - vX.Y` or ` - vX.Y.Z` removed. When a policy is bumped, update `name` and keep the same `oibId`.
 * `previousVersions` is empty for every entry. Upstream uses it for the GUIDs a policy had in earlier OIB releases, and none were issued before this manifest; the version trail is in git history.
-* The manifest lists the 16 policies in `NativeImport/` plus the 3 compliance policies from `IntuneManagement/CompliancePolicies/` (`NativeImport/` has no compliance policies).
+* The manifest lists the 18 policies in `NativeImport/` plus the Password compliance policy, which only exists in `IntuneManagement/CompliancePolicies/` and is marked `deprecated` (see below).
+* Upstream ships the macOS compliance policies only in `IntuneManagement/`. Device Health and Device Security were deployed from there on 2026-01-29, then fell out of management on 2026-02-05 when deploy.py started reading `NativeImport/` only. Our `NativeImport/` copies were rebuilt from the live policies on 2026-10-01; when upstream changes its `IntuneManagement/` copies, carry the change over by hand.
 * `Scripts/Update-OIBManifest.ps1` cannot validate this manifest. It reads `IntuneManagement/` only, and it requires an OIBID in every description. Do not run it in Update mode against MacOS: it would rewrite descriptions.
 
 ## Things not to break
@@ -27,6 +28,10 @@ This file is specific to the Thorp Design fork. It is kept separate from `README
 
 Review this if the update target stops being maintained: without it, the deferral would hold every Mac 90 days behind a major release.
 
+### No compliance password requirement
+
+`Compliance - U - Password` is not deployed (blocklisted in intune-policies `config.json`) and the live v1.0 was retired on 2026-10-01. Microsoft documents that requiring a password in a macOS compliance policy expires the existing password for every account on the device, including the Platform SSO user's local password and the LAPS-managed `localadmin`. Local passwords are governed by the Passcode settings catalog policy instead, with ChangeAtNextAuth false, as Microsoft recommends. The policy had in practice applied to nobody since 2026-02-02, after the pipeline turned an IT-only pilot assignment into an exclusion.
+
 ## Fork changelog
 
 ### 2026-10-01
@@ -38,3 +43,4 @@ Review this if the update target stops being maintained: without it, the deferra
 * Device Security - Passcode v2.0.1: failed-attempt lockout reset changed from 0 to 15 minutes, so the 10-attempt lockout now works.
 * Updates - Update Configuration v2.0.2: users can no longer roll back Background Security Improvements.
 * Added `PolicyManifest.json` (this file's companion), with no change to any policy.
+* Compliance - Device Health v1.0.1 and Device Security v1.0.1: brought into `NativeImport/` from the live policies, block grace period raised to 24 hours (was 6 and 12) to match Windows.

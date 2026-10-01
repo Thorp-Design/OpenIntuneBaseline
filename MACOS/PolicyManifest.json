@@ -230,7 +230,7 @@
     },
     {
       "oibId": "87AC86D1-F76F-40B6-B9AD-4B89124E1E45",
-      "name": "MacOS - OIB - Compliance - U - Device Health - v1.0",
+      "name": "MacOS - OIB - Compliance - U - Device Health - v1.0.1",
       "platform": "MacOS",
       "policyType": "CompliancePolicies",
       "scope": "User",
@@ -244,7 +244,7 @@
     },
     {
       "oibId": "FC41C819-B8D8-4D64-876D-DBC91797E2AB",
-      "name": "MacOS - OIB - Compliance - U - Device Security - v1.0",
+      "name": "MacOS - OIB - Compliance - U - Device Security - v1.0.1",
       "platform": "MacOS",
       "policyType": "CompliancePolicies",
       "scope": "User",
@@ -263,7 +263,7 @@
       "policyType": "CompliancePolicies",
       "scope": "User",
       "addedIn": "1.0",
-      "status": "active",
+      "status": "deprecated",
       "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",

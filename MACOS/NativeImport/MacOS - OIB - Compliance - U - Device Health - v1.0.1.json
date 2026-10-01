@@ -1,0 +1,43 @@
+﻿{
+  "@odata.type": "#microsoft.graph.macOSCompliancePolicy",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "description": null,
+  "displayName": "MacOS - OIB - Compliance - U - Device Health - v1.0.1",
+  "passwordRequired": false,
+  "passwordBlockSimple": false,
+  "passwordExpirationDays": null,
+  "passwordMinimumLength": null,
+  "passwordMinutesOfInactivityBeforeLock": null,
+  "passwordPreviousPasswordBlockCount": null,
+  "passwordMinimumCharacterSetCount": null,
+  "passwordRequiredType": "deviceDefault",
+  "osMinimumVersion": null,
+  "osMaximumVersion": null,
+  "osMinimumBuildVersion": null,
+  "osMaximumBuildVersion": null,
+  "systemIntegrityProtectionEnabled": true,
+  "deviceThreatProtectionEnabled": false,
+  "deviceThreatProtectionRequiredSecurityLevel": "unavailable",
+  "advancedThreatProtectionRequiredSecurityLevel": "unavailable",
+  "storageRequireEncryption": false,
+  "gatekeeperAllowedAppSource": "notConfigured",
+  "firewallEnabled": false,
+  "firewallBlockAllIncoming": false,
+  "firewallEnableStealthMode": false,
+  "deviceCompliancePolicyScript": null,
+  "scheduledActionsForRule": [
+    {
+      "ruleName": null,
+      "scheduledActionConfigurations": [
+        {
+          "gracePeriodHours": 24,
+          "actionType": "block",
+          "notificationTemplateId": "00000000-0000-0000-0000-000000000000",
+          "notificationMessageCCList": []
+        }
+      ]
+    }
+  ]
+}
