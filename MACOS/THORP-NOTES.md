@@ -15,6 +15,18 @@ This file is specific to the Thorp Design fork. It is kept separate from `README
 * The Passcode policy (`MacOS - OIB - SC - Device Security - Passcode`) has no `D` or `U` token in its name. Its All Devices assignment, with the macOS filter, was made by hand in Intune. Never rename its stem.
 * `IntuneManagement/` holds legacy copies. They are not deployed and some are stale (older versions, and settings that have since changed in `NativeImport/`). `NativeImport/` is authoritative. See `IntuneManagement/README.md`.
 
+## Deliberate exceptions to CIS and mSCP
+
+### Major macOS upgrades deferred 90 days
+
+`Updates - D - Update Configuration` sets `MajorPeriodInDays = 90`, the most Intune allows. CIS 1.6 asks for 30 days or fewer. We keep 90 on purpose.
+
+* We do not take major upgrades on Apple's schedule. The custom `macOS - Software Update Target` policy, driven by `.deployment/macos-target-major` in intune-policies, enforces the major and point release we choose, by a deadline we set. Enforcement overrides the deferral, so a major we have approved still installs on time.
+* The deferral only stops users upgrading to a new major by themselves before we have tested it. macOS 27 removed Rosetta and libiodbc on upgrade, which broke Vectorworks and needed packaged fixes first. Users moving early would have lost working software.
+* Minor and security updates are not deferred, and Background Security Improvements install automatically, so the intent of the benchmark (patches arrive quickly) is still met.
+
+Review this if the update target stops being maintained: without it, the deferral would hold every Mac 90 days behind a major release.
+
 ## Fork changelog
 
 ### 2026-10-01
