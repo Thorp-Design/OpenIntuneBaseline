@@ -4,7 +4,7 @@
     "creationSource": null,
     "description": "",
     "lastModifiedDateTime": "2025-12-25T15:03:46.7709243Z",
-    "name": "MacOS - OIB - SC - Authentication - D - Platform SSO - v2.0.2",
+    "name": "MacOS - OIB - SC - Authentication - D - Platform SSO - v2.0.3",
     "platforms": "macOS",
     "priorityMetaData": null,
     "roleScopeTagIds": [
@@ -137,7 +137,7 @@
                                                 "auditRuleInformation": null,
                                                 "choiceSettingValue": {
                                                     "settingValueTemplateReference": null,
-                                                    "value": "com.apple.extensiblesso_platformsso_userauthorizationmode_1",
+                                                    "value": "com.apple.extensiblesso_platformsso_userauthorizationmode_0",
                                                     "children": []
                                                 }
                                             }
